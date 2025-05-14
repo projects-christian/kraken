@@ -10,7 +10,7 @@
 
   <Showcase/>
 
-  <section class="pb-24" data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
+  <!-- <section class="pb-24" data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
     <div class="container">
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-px rounded-xl overflow-hidden">
         <div
@@ -58,11 +58,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- <Browse/> -->
 
-  <FAQs/>
+  <!-- <FAQs/> -->
 
   <!-- <Blogs/> -->
 

@@ -252,61 +252,73 @@ export const blogs: BlogType[] = [
 
 export const footerItems: FooterItemType[] = [
     {
-        title: 'Marketplace',
+        title: 'Servicios',
         links: [
             {
-                label: 'All NFTs',
+                label: 'Carrozas',
                 route: {}
             },
             {
-                label: 'New',
+                label: 'Piezas artisticas',
                 route: {}
             },
             {
-                label: 'Arts',
+                label: 'Esculturas y Macroesculturas',
+                route: {}
+            },
+            {
+                label: 'Sets de rodaje para cine y TV',
                 route: {}
             },
         ]
     },
     {
-        title: 'Status',
+        title: 'Servicios',
         links: [
             {
-                label: 'Rankings',
+                label: 'Estatuillas para premios',
                 route: {}
             },
             {
-                label: 'Activity',
+                label: 'Ambientación de lugar',
+                route: {}
+            },
+            {
+                label: 'Creación de disfraces',
+                route: {}
+            },
+            {
+                label: 'Parques temáticos',
                 route: {}
             },
         ]
     },
     {
-        title: 'Resources',
+        title: 'Recursos',
         links: [
             {
-                label: 'Help Center',
+                label: '',
                 route: {}
             },
             {
-                label: 'Suggestions',
+                label: '',
                 route: {}
             },
             {
-                label: 'Newsletter',
+                label: '',
                 route: {}
             },
         ]
     },
     {
-        title: 'Company',
+        title: 'Compañia',
         links: [
             {
-                label: 'About',
+                label: '',
                 route: {}
             },
             {
-                label: 'Carriers',
+                label: '',
                 route: {}
             },
         ]

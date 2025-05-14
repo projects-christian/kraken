@@ -8,20 +8,20 @@
 
         <div
             class="absolute top-1/2 -trandefault-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 duration-500 ease-in-out">
-          <a href="#"
+          <!-- <a href="#"
              class="py-1.5 px-6 inline-flex items-center gap-2 font-semibold tracking-wide align-middle duration-500 text-base text-center border border-primary bg-primary text-white rounded-full hover:bg-primary-hover hover:border-primary-hover">Place
             Bid
             <Navigation class="h-4 w-4 fill-white"/>
-          </a>
+          </a> -->
         </div>
 
         <div v-if="item.sale" class="absolute top-0 start-0 p-2 transition-all duration-700">
           <div class="inline-flex justify-center w-full">
-            <div class="bg-gradient-to-r from-rose-500 to-blue-600 py-1 px-2.5 rounded-full">
+            <!-- <div class="bg-gradient-to-r from-rose-500 to-blue-600 py-1 px-2.5 rounded-full">
               <p class="flex flex-col text-white font-bold text-sm">
                 {{ days }}:{{ hours }}:{{ minutes }}:{{ seconds }}
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -47,8 +47,8 @@
         <div class="flex items-center justify-between">
           <div>
             <span class="block font-small text-default-100">{{ item.description }}</span>
-            <span class="block font-medium text-primary"><i
-                class="mdi mdi-ethereum text-xl leading-none text-primary me-1"></i>{{ item.bid.current }} ETH</span>
+            <!-- <span class="block font-medium text-primary"><i
+                class="mdi mdi-ethereum text-xl leading-none text-primary me-1"></i>{{ item.bid.current }} ETH</span> -->
           </div>
           <!-- <div class="text-end">
             <span class="block font-semibold text-default-100">Last Bid</span>

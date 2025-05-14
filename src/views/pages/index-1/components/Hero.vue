@@ -21,14 +21,14 @@
                 <p class="text-lg max-w-xl text-default-200 mb-6">Únete a nosotros y descubre cómo podemos transformar tu próximo evento en una experiencia inolvidable.
                     ¡llevamos la magia del arte a tu vida!</p>
 
-                <div>
+                <!-- <div>
                   <a href="#"
                      class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-lg hover:bg-primary-hover transition-all duration-300 me-2 mt-2">Explore
                     Now</a>
                   <a href="#"
                      class="inline-flex items-center justify-center gap-2 py-2 px-6 transition-all duration-300 border bg-transparent border-white/20 text-white rounded-lg mt-2 hover:bg-primary hover:border-primary">Sell
                     Now <i class="mdi mdi-arrow-top-right-thin text-xl leading-[0]"></i></a>
-                </div>
+                </div> -->
               </div>
             </div>
 

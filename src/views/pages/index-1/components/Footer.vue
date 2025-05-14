@@ -7,9 +7,9 @@
             <img :src="logo" class="w-36" alt="">
           </a>
 
-          <p class="text-default-200 text-sm font-medium max-w-xs mt-6">Start working with Tailwindcss It allows
-            you to compose complex designs by combining and customizing utility classes.</p>
-          <h5 class="text-default-200 text-base font-semibold mb-4 mt-6">Follow Us :</h5>
+          <p class="text-default-200 text-sm font-medium max-w-xs mt-6">Comienza tu experiencia con Kraken 
+            </p>
+          <!-- <h5 class="text-default-200 text-base font-semibold mb-4 mt-6">Follow Us :</h5>
           <ul class="flex flex-wrap items-center gap-1">
             <li v-for="(link,idx) in socialLinks" :key="idx">
               <router-link :to="link.route.url ? link.route.url : link.route"
@@ -17,7 +17,7 @@
                 <component :is="link.icon" class="h-4 w-4 text-default-300 group-hover:text-white"/>
               </router-link>
             </li>
-          </ul>
+          </ul> -->
         </div>
 
         <div class="lg:w-8/12">
@@ -46,9 +46,9 @@
           class="container lg:px-20 flex flex-wrap justify-center items-center gap-4 h-full md:justify-between text-center md:text-start">
         <p class="text-base font-medium text-default-400">
           {{ currentYear }}
-          © {{ appName }} - <a href="#">Design & Crafted
+          © {{ appName }} - <a href="#">Elaborado 
           <Heart class="inline h-4 w-4 text-red-500 fill-red-500"/>
-          by
+          por
           {{ appAuthor }}</a>
         </p>
         <p class="text-base font-medium text-default-400">

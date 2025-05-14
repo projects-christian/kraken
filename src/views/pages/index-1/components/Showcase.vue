@@ -4,8 +4,7 @@
       <div class="flex flex-wrap items-center justify-between mb-10">
         <div>
           <h2 class="text-4xl font-medium capitalize text-white mb-2">Exhibición de obras</h2>
-          <p class="text-sm text-default-200 font-medium">Start working with Tailwindcss It allows you to compose
-            complex designs <br> by combining and customizing utility classes..</p>
+          <p class="text-sm text-default-200 font-medium">Explora nuestros trabajos <br> productos unicos</p>
         </div>
         <a href="#"
            class="inline-flex items-center justify-center gap-2 border border-white/10 text-sm text-white py-1.5 px-4 rounded-full hover:bg-primary-hover transition-all duration-300">See
