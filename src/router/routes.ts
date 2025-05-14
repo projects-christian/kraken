@@ -9,7 +9,8 @@ export const allRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
     {
         path: '/',
         name: 'landing',
-        component: () => import('@/views/landing/index.vue'),
+        // component: () => import('@/views/landing/index.vue'),
+        component: () => import('@/views/pages/index-1/index.vue')
     },
     {
         path: '/pages/',
@@ -18,7 +19,7 @@ export const allRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
                 path: 'index-1',
                 name: 'pages.index-1',
                 meta: {
-                    requiresAuth: true,
+                    requiresAuth: false,
                 },
                 component: () => import('@/views/pages/index-1/index.vue'),
             },

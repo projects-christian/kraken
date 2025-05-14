@@ -13,13 +13,13 @@
                                 <span
                                     class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-primary/20 text-primary mb-6">
                                     <span class="w-2 h-2 inline-block bg-primary rounded-full"></span>
-                                    Collect NFTs
+                                    Aquí respiras arte
                                 </span>
                 <h4 class="font-semibold text-4xl/tight lg:text-6xl/tight capitalize text-white mb-4"><span
-                    class="bg-gradient-to-l from-red-600 to-primary text-transparent bg-clip-text">Discover & collect</span>
-                  the best NFTs digital art</h4>
-                <p class="text-lg max-w-xl text-default-200 mb-6">We are a huge marketplace dedicated to
-                  connecting great artists of all NFT with their fans and unique token collectors!</p>
+                    class="bg-gradient-to-l from-red-600 to-primary text-transparent bg-clip-text">Kraken Studio Art</span>
+                  escenografia, carrozas y ambientación.</h4>
+                <p class="text-lg max-w-xl text-default-200 mb-6">Únete a nosotros y descubre cómo podemos transformar tu próximo evento en una experiencia inolvidable.
+                    ¡llevamos la magia del arte a tu vida!</p>
 
                 <div>
                   <a href="#"

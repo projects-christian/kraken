@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex flex-wrap items-center justify-between mb-10">
         <div>
-          <h2 class="text-4xl font-medium capitalize text-white mb-2">The Best showcase</h2>
+          <h2 class="text-4xl font-medium capitalize text-white mb-2">Exhibición de obras</h2>
           <p class="text-sm text-default-200 font-medium">Start working with Tailwindcss It allows you to compose
             complex designs <br> by combining and customizing utility classes..</p>
         </div>

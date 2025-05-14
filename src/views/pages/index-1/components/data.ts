@@ -40,11 +40,12 @@ import blog2 from "@/assets/images/nft/bg/2.png"
 export const categories: CategoryType[] = [
     {
         image: nftArt4,
-        name: 'Half Hair',
+        name: 'Carrozas',
         creator: {
             image: avatar1,
             username: '@Nikom'
         },
+        description: "Diseño de carrozas nauticas y terrestres, con materiales ligeros y resistentes.",
         bid: {
             current: 20.5,
             last: 25.04,
@@ -55,11 +56,12 @@ export const categories: CategoryType[] = [
     },
     {
         image: nftArt5,
-        name: 'Headphone Monkey',
+        name: 'Piezas artisticas',
         creator: {
             image: avatar3,
             username: '@Mexi'
         },
+        description: "Creación de piezas y figuras que decoran  el entorno del evento.",
         bid: {
             current: 12.5,
             last: 25.04,
@@ -67,11 +69,12 @@ export const categories: CategoryType[] = [
     },
     {
         image: nftArt6,
-        name: 'Goggles Monkey',
+        name: 'Esculturas y Macroesculturas',
         creator: {
             image: avatar4,
             username: '@Astro'
         },
+        description: "Esculturas a gran escala con acabados de calidad y durabilidad.",
         bid: {
             current: 14.8,
             last: 12.04,
@@ -80,11 +83,12 @@ export const categories: CategoryType[] = [
     },
     {
         image: nftArt7,
-        name: 'Cute Girl',
+        name: 'Sets de rodaje para cine y TV',
         creator: {
             image: avatar5,
             username: '@Aliza'
         },
+        description: "Transformamos espacios existentes en los escenarios requeridos por el guion.",
         bid: {
             current: 18,
             last: 32.06,
@@ -95,11 +99,12 @@ export const categories: CategoryType[] = [
     },
     {
         image: nftArt8,
-        name: 'Sky Hair Girl',
+        name: 'Estatuillas para premios',
         creator: {
             image: avatar8,
             username: '@Tony'
         },
+        description: "Diseños unicos y exclusivos para que cada una sea un objeto de colección.",
         bid: {
             current: 20.42,
             last: 18.96,
@@ -107,11 +112,12 @@ export const categories: CategoryType[] = [
     },
     {
         image: nftArt9,
-        name: 'Cartoon Couple',
+        name: 'Ambientación de lugar',
         creator: {
             image: avatar9,
             username: '@Alabto'
         },
+        description: "Creamos ambientaciones temáticas para eventos especiales, lanzamientos de productos, celebraciones y más.",
         bid: {
             current: 24.96,
             last: 40.22,
@@ -119,11 +125,12 @@ export const categories: CategoryType[] = [
     },
     {
         image: nftArt14,
-        name: 'Skeleton',
+        name: 'Creación de disfraces',
         creator: {
             image: avatar10,
             username: '@Minato'
         },
+        description: "Elaborados y detallados con alta calidad acorde a la tematica del evento.",
         bid: {
             current: 12.5,
             last: 25.04,
@@ -134,11 +141,12 @@ export const categories: CategoryType[] = [
     },
     {
         image: nftArt22,
-        name: 'Businessman Monkey',
+        name: 'Parques temáticos',
         creator: {
             image: avatar11,
             username: '@Tamari'
         },
+        description: "Implica la transformación de espacios en mundos fantásticos",
         bid: {
             current: 42.52,
             last: 20.42,

@@ -31,10 +31,10 @@
           <div class="flex items-center gap-2">
             <img :src="item.creator.image" class="rounded-full h-10 w-10" alt="">
             <span>
-              <a href="#" class="text-sm font-medium text-default-100 hover:text-primary">
-                {{ item.creator.username }}
+              <a href="#" class="text-md font-semibold text-default-100 hover:text-primary">
+                {{ item.name }}
               </a>
-              <span class="text-xs text-default-100 block">{{ item.name }}</span>
+              <!-- <span class="text-xs text-default-100 block">{{ item.creator.username }}</span> -->
             </span>
           </div>
           <a href="#"
@@ -46,15 +46,15 @@
 
         <div class="flex items-center justify-between">
           <div>
-            <span class="block font-semibold text-default-100">Current Bid</span>
-            <span class="block font-semibold text-primary"><i
+            <span class="block font-small text-default-100">{{ item.description }}</span>
+            <span class="block font-medium text-primary"><i
                 class="mdi mdi-ethereum text-xl leading-none text-primary me-1"></i>{{ item.bid.current }} ETH</span>
           </div>
-          <div class="text-end">
+          <!-- <div class="text-end">
             <span class="block font-semibold text-default-100">Last Bid</span>
             <span class="block font-semibold text-primary"><i
                 class="mdi mdi-ethereum text-xl leading-none text-primary me-1"></i>{{ item.bid.last }} ETH</span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@
 
   <Categories/>
 
-  <Sellers/>
+  <!-- <Sellers/> -->
 
   <Showcase/>
 
@@ -60,11 +60,11 @@
     </div>
   </section>
 
-  <Browse/>
+  <!-- <Browse/> -->
 
   <FAQs/>
 
-  <Blogs/>
+  <!-- <Blogs/> -->
 
   <Footer/>
 
@@ -93,22 +93,22 @@ import {Diamond, Wallet, Shapes} from "lucide-vue-next";
 const navLinks: NavBarLinkType[] = [
   {
     id: 'home',
-    label: 'Home',
+    label: 'Inicio',
     route: {url: '#home'}
   },
   {
     id: 'categories',
-    label: 'Categories',
+    label: 'Categorias',
     route: {url: '#categories'}
   },
-  {
-    id: 'sellers',
-    label: 'Sellers',
-    route: {url: '#sellers'}
-  },
+//   {
+//     id: 'sellers',
+//     label: 'Sellers',
+//     route: {url: '#sellers'}
+//   },
   {
     id: 'showcase',
-    label: 'Showcase',
+    label: 'Exhibición',
     route: {url: '#showcase'}
   },
   {
@@ -116,10 +116,10 @@ const navLinks: NavBarLinkType[] = [
     label: 'Faq',
     route: {url: '#faq'}
   },
-  {
-    id: 'blog',
-    label: 'Blog',
-    route: {url: '#blog'}
-  }
+//   {
+//     id: 'blog',
+//     label: 'Blog',
+//     route: {url: '#blog'}
+//   }
 ]
 </script>
