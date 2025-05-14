@@ -25,18 +25,18 @@
           </ul>
 
           <div class="lg:hidden flex items-center pt-4 mt-4 lg:pt-0 lg:mt-0 border-t border-white/10 lg:border-none">
-            <a href="#"
+            <!-- <a href="#"
                class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-3">
               <ArrowBigDownDash class="h-5 w-5 me-2"/>
-              Download</a>
+              Download</a> -->
           </div>
         </div>
 
         <div class="hidden lg:flex items-center">
-          <a href="#demo"
+          <!-- <a href="#demo"
              class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">
             <ArrowBigDownDash class="h-5 w-5 me-2"/>
-            Download </a>
+            Download </a> -->
         </div>
       </nav>
     </div>

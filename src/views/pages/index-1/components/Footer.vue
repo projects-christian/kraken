@@ -60,7 +60,7 @@
 </template>
 
 <script setup lang="ts">
-import logo from "@/assets/images/logo.png"
+import logo from "@/assets/images/kraken-logo.png"
 import {CircleSlash, Heart} from "lucide-vue-next";
 import {currentYear, appName, appAuthor, socialLinks} from "@/helpers";
 import {footerItems} from "@/views/pages/index-1/components/data";
