@@ -1,16 +1,15 @@
 <template>
+    <NavBar :nav-links="navLinks" />
 
-  <NavBar :nav-links="navLinks"/>
+    <Hero />
 
-  <Hero/>
+    <Categories />
 
-  <Categories/>
+    <!-- <Sellers/> -->
 
-  <!-- <Sellers/> -->
+    <Showcase />
 
-  <Showcase/>
-
-  <!-- <section class="pb-24" data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
+    <!-- <section class="pb-24" data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
     <div class="container">
       <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-px rounded-xl overflow-hidden">
         <div
@@ -60,22 +59,21 @@
     </div>
   </section> -->
 
-  <!-- <Browse/> -->
+    <!-- <Browse/> -->
 
-  <!-- <FAQs/> -->
+    <FAQs />
 
-  <!-- <Blogs/> -->
+    <!-- <Blogs/> -->
 
-  <Footer/>
+    <Footer />
 
-  <Background2/>
+    <Background2 />
 
-  <BackToTop/>
-
+    <BackToTop />
 </template>
 
 <script setup lang="ts">
-import type {NavBarLinkType} from "@/types/layout";
+import type { NavBarLinkType } from "@/types/layout";
 import NavBar from "@/components/NavBar.vue";
 import Hero from "@/views/pages/index-1/components/Hero.vue";
 import Categories from "@/views/pages/index-1/components/Categories.vue";
@@ -88,38 +86,38 @@ import Footer from "@/views/pages/index-1/components/Footer.vue";
 import Background2 from "@/components/Background2.vue";
 import BackToTop from "@/components/BackToTop.vue";
 
-import {Diamond, Wallet, Shapes} from "lucide-vue-next";
+import { Diamond, Wallet, Shapes } from "lucide-vue-next";
 
 const navLinks: NavBarLinkType[] = [
-  {
-    id: 'home',
-    label: 'Inicio',
-    route: {url: '#home'}
-  },
-  {
-    id: 'categories',
-    label: 'Categorias',
-    route: {url: '#categories'}
-  },
-//   {
-//     id: 'sellers',
-//     label: 'Sellers',
-//     route: {url: '#sellers'}
-//   },
-  {
-    id: 'showcase',
-    label: 'Exhibición',
-    route: {url: '#showcase'}
-  },
-  {
-    id: 'faq',
-    label: 'Faq',
-    route: {url: '#faq'}
-  },
-//   {
-//     id: 'blog',
-//     label: 'Blog',
-//     route: {url: '#blog'}
-//   }
-]
+    {
+        id: "home",
+        label: "Inicio",
+        route: { url: "#home" },
+    },
+    {
+        id: "categories",
+        label: "Servicios",
+        route: { url: "#categories" },
+    },
+    //   {
+    //     id: 'sellers',
+    //     label: 'Sellers',
+    //     route: {url: '#sellers'}
+    //   },
+    {
+        id: "showcase",
+        label: "Exhibición",
+        route: { url: "#showcase" },
+    },
+    {
+        id: "faq",
+        label: "Faq",
+        route: { url: "#faq" },
+    },
+    //   {
+    //     id: 'blog',
+    //     label: 'Blog',
+    //     route: {url: '#blog'}
+    //   }
+];
 </script>

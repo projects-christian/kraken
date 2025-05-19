@@ -222,28 +222,30 @@ export const browseByCategory = [
 
 export const faqs: FAQType[] = [
     {
-        question: "Will it support my language?",
-        answer: "You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.",
+        question: "¿Trabajan a medida según una idea o concepto del cliente?",
+        answer: "Sí, todos nuestros proyectos son personalizados. Trabajamos en conjunto con el cliente para transformar sus ideas en diseños únicos y funcionales.",
     },
     {
-        question: "Do you also provide subtitles?",
-        answer: "You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.",
+        question:
+            "¿Cuál es el proceso de trabajo desde el primer contacto hasta la entrega final?",
+        answer: "Comenzamos con una reunión para entender tu necesidad, luego desarrollamos una propuesta visual y técnica, y tras su aprobación, pasamos a la producción y montaje.",
     },
     {
-        question: "How do I get started?",
-        answer: "You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.",
+        question: "¿Con cuánta anticipación debo hacer mi pedido?",
+        answer: "En caso de emergencia contactanos y te damos una respuesta, recomendamos contactarnos al menos con 1 a 3 meses de anticipación, dependiendo de la magnitud del proyecto.",
     },
     {
-        question: "Do you have any samples?",
-        answer: "You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.",
+        question:
+            "¿Ofrecen transporte e instalación de las escenografías o carrozas?",
+        answer: "Sí, ofrecemos servicio completo, que incluye transporte, montaje en el lugar del evento o presentación.",
     },
     {
-        question: "Can I get custom templates?",
-        answer: "You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.",
+        question: "¿Realizan trabajos en todo el país?",
+        answer: "Realizamos trabajos a nivel nacional e internacional.",
     },
     {
-        question: "What types of videos can i upload?",
-        answer: "You can upload any files from your computer or use Youtube links. Keep in mind that our content repurposing works best with longer videos.",
+        question: "¿Cómo solicito un presupuesto?",
+        answer: "Puedes contactarnos a través del formulario en nuestra web, por correo electrónico o teléfono. Cuéntanos tu idea, fechas y lugar del evento, y te enviaremos una propuesta a medida.",
     },
 ];
 
