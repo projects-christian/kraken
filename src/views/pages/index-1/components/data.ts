@@ -27,16 +27,16 @@ import nftArt20 from "@/assets/images/nft/art/20.png";
 import nftArt21 from "@/assets/images/nft/art/21.png";
 import nftArt22 from "@/assets/images/nft/art/servicios-parques-tematicos.png";
 
-import avatar1 from "@/assets/images/avatars/img-1.png";
+import avatar1 from "@/assets/images/nft/art/servicios-carrozas.png";
 import avatar2 from "@/assets/images/avatars/img-2.png";
-import avatar3 from "@/assets/images/avatars/img-3.png";
-import avatar4 from "@/assets/images/avatars/img-4.png";
-import avatar5 from "@/assets/images/avatars/img-5.png";
+import avatar3 from "@/assets/images/nft/art/servicios-piezas-artisticas.png";
+import avatar4 from "@/assets/images/nft/art/servicios-esculturas.png";
+import avatar5 from "@/assets/images/nft/art/servicios-set-de-rodaje.png";
 import avatar6 from "@/assets/images/avatars/img-6.png";
-import avatar8 from "@/assets/images/avatars/img-8.png";
-import avatar9 from "@/assets/images/avatars/img-9.png";
-import avatar10 from "@/assets/images/avatars/img-10.png";
-import avatar11 from "@/assets/images/avatars/img-11.png";
+import avatar8 from "@/assets/images/nft/art/servicios-estatuillas.png";
+import avatar9 from "@/assets/images/nft/art/servicios-ambientacion-de-lugar.png";
+import avatar10 from "@/assets/images/nft/art/servicios-disfraces.png";
+import avatar11 from "@/assets/images/nft/art/servicios-parques-tematicos.png";
 
 import blog1 from "@/assets/images/nft/bg/1.png";
 import blog2 from "@/assets/images/nft/bg/2.png";
