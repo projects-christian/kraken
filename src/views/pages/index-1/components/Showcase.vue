@@ -54,12 +54,12 @@ onMounted(() => {
 });
 
 const showcaseItems = [
-    "/src/assets/images/nft/art/10.png",
-    "/src/assets/images/nft/art/4.png",
-    "/src/assets/images/nft/art/5.png",
-    "/src/assets/images/nft/art/9.png",
-    "/src/assets/images/nft/art/14.png",
-    "/src/assets/images/nft/art/22.png",
+    "/src/assets/images/nft/art/gallery-1.jpg",
+    "/src/assets/images/nft/art/gallery-2.jpg",
+    "/src/assets/images/nft/art/gallery-3.jpg",
+    "/src/assets/images/nft/art/gallery-4.jpg",
+    "/src/assets/images/nft/art/gallery-5.jpg",
+    "/src/assets/images/nft/art/gallery-6.jpg",
     "/src/assets/images/nft/art/25.png",
     "/src/assets/images/nft/art/20.png",
 ];
