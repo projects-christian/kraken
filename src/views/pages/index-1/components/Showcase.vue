@@ -49,18 +49,18 @@ import { onMounted } from "vue";
 import GLightbox from "glightbox";
 import { MoveRight } from "lucide-vue-next";
 
+import img1 from "@/assets/images/nft/art/gallery-1.jpg";
+import img2 from "@/assets/images/nft/art/gallery-2.jpg";
+import img3 from "@/assets/images/nft/art/gallery-3.jpg";
+import img4 from "@/assets/images/nft/art/gallery-4.jpg";
+import img5 from "@/assets/images/nft/art/gallery-5.jpg";
+import img6 from "@/assets/images/nft/art/gallery-6.jpg";
+import img7 from "@/assets/images/nft/art/gallery-7.jpg";
+import img8 from "@/assets/images/nft/art/gallery-8.jpg";
+
 onMounted(() => {
     GLightbox({ selector: ".glightbox" });
 });
 
-const showcaseItems = [
-    "/src/assets/images/nft/art/gallery-1.jpg",
-    "/src/assets/images/nft/art/gallery-2.jpg",
-    "/src/assets/images/nft/art/gallery-3.jpg",
-    "/src/assets/images/nft/art/gallery-4.jpg",
-    "/src/assets/images/nft/art/gallery-5.jpg",
-    "/src/assets/images/nft/art/gallery-6.jpg",
-    "/src/assets/images/nft/art/25.png",
-    "/src/assets/images/nft/art/20.png",
-];
+const showcaseItems = [img1, img2, img3, img4, img5, img6, img7, img8];
 </script>
