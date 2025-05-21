@@ -54,8 +54,8 @@
                             <p
                                 class="text-default-300 group-hover:text-white/80 duration-500 mt-3"
                             >
-                                ¿Tienes una idea en mente? ¿Querés pedir un
-                                presupuesto o hacer una consulta? Escribenos y
+                                ¿Tienes una idea en mente? ¿Quieres pedir un
+                                presupuesto o hacer una consulta? Escríbenos y
                                 con gusto te ayudaremos a darle forma a tu
                                 proyecto. Estamos para escucharte.<br /><br />
                             </p>
