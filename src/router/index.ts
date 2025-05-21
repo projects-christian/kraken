@@ -19,10 +19,20 @@ const router = createRouter({
         }
 
         if (to.hash) {
-            return {
-                el: to.hash,
-                behavior: "smooth",
-            };
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    const element = document.querySelector(to.hash);
+                    if (element) {
+                        const yOffset = -60; // Ajusta este valor según la altura de tu header
+                        const y =
+                            element.getBoundingClientRect().top +
+                            window.pageYOffset +
+                            yOffset;
+                        window.scrollTo({ top: y, behavior: "smooth" });
+                    }
+                    resolve();
+                }, 300); // Espera un poco por si aún no se ha renderizado el DOM
+            });
         }
 
         return { left: 0, top: 0 };
