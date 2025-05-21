@@ -1,33 +1,33 @@
 <template>
-  <NavBar :nav-links="navLinks"/>
+    <NavBar :nav-links="navLinks" />
 
-  <Hero/>
+    <Hero />
 
-  <Tools/>
+    <Tools />
 
-  <Services/>
+    <Services />
 
-  <Features/>
+    <Features />
 
-  <Topics/>
+    <Topics />
 
-  <Testimonials/>
+    <Testimonials />
 
-  <Pricing/>
+    <Pricing />
 
-  <FAQs/>
+    <FAQs />
 
-  <CTA/>
+    <CTA />
 
-  <Footer/>
+    <Footer />
 
-  <Background1/>
+    <Background1 />
 
-  <BackToTop/>
+    <BackToTop />
 </template>
 
 <script setup lang="ts">
-import type {NavBarLinkType} from "@/types/layout";
+import type { NavBarLinkType } from "@/types/layout";
 import NavBar from "@/components/NavBar.vue";
 import Hero from "@/views/pages/index-4/components/Hero.vue";
 import Tools from "@/views/pages/index-4/components/Tools.vue";
@@ -43,35 +43,35 @@ import BackToTop from "@/components/BackToTop.vue";
 import Background1 from "@/components/Background1.vue";
 
 const navLinks: NavBarLinkType[] = [
-  {
-    id: 'home',
-    label: 'Home',
-    route: {url: '#home'}
-  },
-  {
-    id: 'tools',
-    label: 'Tools',
-    route: {url: '#tools'}
-  },
-  {
-    id: 'features',
-    label: 'Features',
-    route: {url: '#features'}
-  },
-  {
-    id: 'testimonials',
-    label: 'Testimonials',
-    route: {url: '#testimonials'}
-  },
-  {
-    id: 'price',
-    label: 'Price',
-    route: {url: '#price'}
-  },
-  {
-    id: 'faq',
-    label: 'Faq',
-    route: {url: '#faq'}
-  }
-]
+    {
+        id: "home",
+        label: "Home",
+        route: { url: "#home" },
+    },
+    {
+        id: "tools",
+        label: "Tools",
+        route: { url: "#tools" },
+    },
+    {
+        id: "features",
+        label: "Features",
+        route: { url: "#features" },
+    },
+    {
+        id: "testimonials",
+        label: "Testimonials",
+        route: { url: "#testimonials" },
+    },
+    {
+        id: "price",
+        label: "Price",
+        route: { url: "#price" },
+    },
+    {
+        id: "faq",
+        label: "Faq",
+        route: { url: "#faq" },
+    },
+];
 </script>

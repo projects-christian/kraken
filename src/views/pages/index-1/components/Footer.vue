@@ -10,7 +10,8 @@
                     <p
                         class="text-default-200 text-sm font-medium max-w-xs mt-6"
                     >
-                        Comienza tu experiencia con Kraken
+                        Nos encanta crear cosas que llamen la atención y le den
+                        vida a cada espacio.
                     </p>
                     <!-- <h5 class="text-default-200 text-base font-semibold mb-4 mt-6">Follow Us :</h5>
           <ul class="flex flex-wrap items-center gap-1">

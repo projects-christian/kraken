@@ -9,11 +9,13 @@
             <div class="flex flex-wrap items-center justify-between mb-10">
                 <div>
                     <h2 class="text-4xl font-medium capitalize text-white mb-2">
-                        Exhibición de obras
+                        Trabajos Realizados
                     </h2>
                     <p class="text-sm text-default-200 font-medium">
-                        Explora nuestros trabajos <br />
-                        productos unicos
+                        Conocé algunos de nuestros trabajos realizados en
+                        escenografía, carrozas y ambientación. <br />
+                        Ideas que se hicieron realidad a través del diseño, la
+                        técnica y la pasión.
                     </p>
                 </div>
                 <!-- <a

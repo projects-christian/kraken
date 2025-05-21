@@ -1,113 +1,113 @@
-import type {RouteRecordRaw} from "vue-router";
+import type { RouteRecordRaw } from "vue-router";
 
 interface RouteMetaType {
     title?: string;
-    requiresAuth?: boolean // add this if authentication is needed
+    requiresAuth?: boolean; // add this if authentication is needed
 }
 
 export const allRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
     {
-        path: '/',
-        name: 'landing',
+        path: "/",
+        name: "landing",
         // component: () => import('@/views/landing/index.vue'),
-        component: () => import('@/views/pages/index-1/index.vue')
+        component: () => import("@/views/pages/index-1/index.vue"),
     },
     {
-        path: '/pages/',
+        path: "/pages/",
         children: [
             {
-                path: 'index-1',
-                name: 'pages.index-1',
+                path: "index-1",
+                name: "pages.index-1",
                 meta: {
                     requiresAuth: false,
                 },
-                component: () => import('@/views/pages/index-1/index.vue'),
+                component: () => import("@/views/pages/index-1/index.vue"),
             },
             {
-                path: 'index-2',
-                name: 'pages.index-2',
+                path: "index-2",
+                name: "pages.index-2",
                 meta: {
-                    requiresAuth: true,
+                    requiresAuth: false,
                 },
-                component: () => import('@/views/pages/index-2/index.vue'),
+                component: () => import("@/views/pages/index-2/index.vue"),
             },
             {
-                path: 'index-3',
-                name: 'pages.index-3',
+                path: "index-3",
+                name: "pages.index-3",
                 meta: {
-                    requiresAuth: true,
+                    requiresAuth: false,
                 },
-                component: () => import('@/views/pages/index-3/index.vue'),
+                component: () => import("@/views/pages/index-3/index.vue"),
             },
             {
-                path: 'index-4',
-                name: 'pages.index-4',
+                path: "index-4",
+                name: "pages.index-4",
                 meta: {
-                    requiresAuth: true,
+                    requiresAuth: false,
                 },
-                component: () => import('@/views/pages/index-4/index.vue'),
+                component: () => import("@/views/pages/index-4/index.vue"),
             },
             {
-                path: 'index-5',
-                name: 'pages.index-5',
+                path: "index-5",
+                name: "pages.index-5",
                 meta: {
-                    requiresAuth: true,
+                    requiresAuth: false,
                 },
-                component: () => import('@/views/pages/index-5/index.vue'),
+                component: () => import("@/views/pages/index-5/index.vue"),
             },
-        ]
+        ],
     },
     {
-        path: '/auth/',
+        path: "/auth/",
         children: [
             {
-                path: 'sign-in',
-                name: 'auth.sign-in',
+                path: "sign-in",
+                name: "auth.sign-in",
                 meta: {
-                    title: 'Sign In'
+                    title: "Sign In",
                 },
-                component: () => import('@/views/auth/sign-in.vue'),
+                component: () => import("@/views/auth/sign-in.vue"),
             },
             {
-                path: 'sign-in-with-qr',
-                name: 'auth.sign-in-with-qr',
+                path: "sign-in-with-qr",
+                name: "auth.sign-in-with-qr",
                 meta: {
-                    title: 'Sign In With QR'
+                    title: "Sign In With QR",
                 },
-                component: () => import('@/views/auth/sign-in-with-qr.vue'),
+                component: () => import("@/views/auth/sign-in-with-qr.vue"),
             },
             {
-                path: 'sign-up',
-                name: 'auth.sign-up',
+                path: "sign-up",
+                name: "auth.sign-up",
                 meta: {
-                    title: 'Sign Up'
+                    title: "Sign Up",
                 },
-                component: () => import('@/views/auth/sign-up.vue'),
+                component: () => import("@/views/auth/sign-up.vue"),
             },
             {
-                path: 'lock-screen',
-                name: 'auth.lock-screen',
+                path: "lock-screen",
+                name: "auth.lock-screen",
                 meta: {
-                    title: 'Lock Screen'
+                    title: "Lock Screen",
                 },
-                component: () => import('@/views/auth/lock-screen.vue'),
+                component: () => import("@/views/auth/lock-screen.vue"),
             },
             {
-                path: 'forgot-password',
-                name: 'auth.forgot-password',
+                path: "forgot-password",
+                name: "auth.forgot-password",
                 meta: {
-                    title: 'Forgot Password'
+                    title: "Forgot Password",
                 },
-                component: () => import('@/views/auth/forgot-password.vue'),
+                component: () => import("@/views/auth/forgot-password.vue"),
             },
             {
-                path: 'logout',
-                name: 'auth.logout',
+                path: "logout",
+                name: "auth.logout",
                 meta: {
-                    title: 'Logout'
+                    title: "Logout",
                 },
-                component: () => import('@/views/auth/logout.vue'),
+                component: () => import("@/views/auth/logout.vue"),
             },
-        ]
+        ],
     },
 ];

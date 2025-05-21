@@ -40,10 +40,12 @@
                                 <p
                                     class="text-lg max-w-xl text-default-200 mb-6"
                                 >
-                                    Únete a nosotros y descubre cómo podemos
-                                    transformar tu próximo evento en una
-                                    experiencia inolvidable. ¡llevamos la magia
-                                    del arte a tu vida!
+                                    Somos expertos para crear lo que necesites
+                                    para todo tipo de eventos: Carnavales,
+                                    Procesiones religiosas, Desfiles temáticos,
+                                    Fiestas patronales, Lanzamientos de
+                                    productos, Stands para ferias comerciales,
+                                    etc.
                                 </p>
 
                                 <!-- <div>
