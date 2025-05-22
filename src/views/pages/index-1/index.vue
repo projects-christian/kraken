@@ -76,7 +76,7 @@
                 </div>
 
                 <div
-                    class="group relative bg-slate-950/40 backdrop-blur-3xl transition-all duration-500 hover:bg-primary/40 overflow-hidden"
+                    class="group relative  bg-slate-950/40 backdrop-blur-3xl transition-all duration-500 hover:bg-primary/40 overflow-hidden"
                 >
                     <div class="p-6">
                         <div
