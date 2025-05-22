@@ -116,7 +116,7 @@
                             <div class="pb-8">
                                 <h3 class="text-xl font-medium text-white duration-500">Escribenos</h3>
                                 <p class="text-default-300 group-hover:text-white/80 duration-500 mt-3 mb-6">Tambien puedes usar este formulario para ponerte en contacto con nosotros comentandonos la idea que tienes en mente o el producto/servicio que necesites.</p>
-                                <form class="space-y-2 mb-6" action="https://formsubmit.co/b6ab25a505a2fe575e3e4e4339da130a" method="post">
+                                <form class="space-y-2 mb-6" action="https://formsubmit.co/krakenstudioadm@gmail.com" method="post">
                                     <!-- <label for="name" class="text-base text-white">Nombre</label> -->
                                     <div class="relative">
                                         <input type="text" id="name"
