@@ -1,7 +1,7 @@
-import type {RouteParamsRaw} from "vue-router";
-import type {FunctionalComponent} from "vue";
+import type { RouteParamsRaw } from "vue-router";
+import type { FunctionalComponent } from "vue";
 
-export type CurrencyType = '₹' | '$' | '€'
+export type CurrencyType = "₹" | "$" | "€";
 
 export type RouteType = {
     name?: string;
@@ -9,10 +9,10 @@ export type RouteType = {
     url?: string;
 };
 
-export type IconType = FunctionalComponent
+export type IconType = FunctionalComponent;
 
 export type SocialLinkType = {
-    icon: IconType
-    name?: string
-    route: RouteType
-}
+    icon: IconType;
+    name?: string;
+    route: RouteType;
+};

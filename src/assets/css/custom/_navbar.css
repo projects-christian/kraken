@@ -5,7 +5,7 @@
 }
 
 .navbar nav {
-   @apply flex flex-wrap lg:flex-nowrap items-center justify-between py-4 transition-all duration-500;
+    @apply flex flex-wrap lg:flex-nowrap items-center justify-between py-4 transition-all duration-500;
 }
 
 .navbar nav .logo {

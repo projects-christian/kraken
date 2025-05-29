@@ -1,39 +1,38 @@
-import type {IconType} from "@/types";
+import type { IconType } from "@/types";
 
 export type FeatureType = {
-    icon: IconType
-    title: string
-    description: string
-}
+    icon: IconType;
+    title: string;
+    description: string;
+};
 
 export type TopicType = {
-    name: string
-    points: string
-    discussers: { image: string }[]
-}
+    name: string;
+    points: string;
+    discussers: { image: string }[];
+};
 
 export type TestimonialType = {
-    review: string
+    review: string;
     user: {
-        image: string
-        name: string
-        role: string
-    }
-}
+        image: string;
+        name: string;
+        role: string;
+    };
+};
 
 export type PricingPlanType = {
-    name: string
-    description?: string
-    price: number
+    name: string;
+    description?: string;
+    price: number;
     features: {
-        icon?: IconType
-        label: string
-    }[]
-    isPopular?: boolean
-}
-
+        icon?: IconType;
+        label: string;
+    }[];
+    isPopular?: boolean;
+};
 
 export type FAQType = {
-    question: string
-    answer: string
-}
+    question: string;
+    answer: string;
+};

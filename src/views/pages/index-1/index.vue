@@ -49,7 +49,8 @@
                             <h3
                                 href=""
                                 class="text-xl font-medium text-white duration-500"
-                                >Contáctanos
+                            >
+                                Contáctanos
                             </h3>
                             <p
                                 class="text-default-300 group-hover:text-white/80 duration-500 mt-3 mb-6"
@@ -76,7 +77,7 @@
                 </div>
 
                 <div
-                    class="group relative  bg-slate-950/40 backdrop-blur-3xl transition-all duration-500 hover:bg-primary/40 overflow-hidden"
+                    class="group relative bg-slate-950/40 backdrop-blur-3xl transition-all duration-500 hover:bg-primary/40 overflow-hidden"
                 >
                     <div class="p-6">
                         <div
@@ -114,42 +115,86 @@
                                 marca y atraen miradas.
                             </p> -->
                             <div class="pb-8">
-                                <h3 class="text-xl font-medium text-white duration-500">Escribenos</h3>
-                                <p class="text-default-300 group-hover:text-white/80 duration-500 mt-3 mb-6">Tambien puedes usar este formulario para ponerte en contacto con nosotros comentandonos la idea que tienes en mente o el producto/servicio que necesites.</p>
-                                <form class="space-y-2 mb-6" action="https://formsubmit.co/b6ab25a505a2fe575e3e4e4339da130a" method="post" >
+                                <h3
+                                    class="text-xl font-medium text-white duration-500"
+                                >
+                                    Escribenos
+                                </h3>
+                                <p
+                                    class="text-default-300 group-hover:text-white/80 duration-500 mt-3 mb-6"
+                                >
+                                    Tambien puedes usar este formulario para
+                                    ponerte en contacto con nosotros
+                                    comentandonos la idea que tienes en mente o
+                                    el producto/servicio que necesites.
+                                </p>
+                                <form
+                                    class="space-y-2 mb-6"
+                                    action="https://formsubmit.co/b6ab25a505a2fe575e3e4e4339da130a"
+                                    method="post"
+                                >
                                     <!-- <label for="name" class="text-base text-white">Nombre</label> -->
                                     <div class="relative">
-                                        <input type="text" id="name"
-                                                class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                                placeholder="Ingresa tu nombre:" name="name">
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
+                                            placeholder="Ingresa tu nombre:"
+                                            name="name"
+                                        />
                                     </div>
                                     <div class="relative">
-                                        <input type="email" id="subcribe"
-                                                class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                                placeholder="Ingresa tu Email:" name="email">
+                                        <input
+                                            type="email"
+                                            id="subcribe"
+                                            class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
+                                            placeholder="Ingresa tu Email:"
+                                            name="email"
+                                        />
                                     </div>
                                     <div class="relative">
-                                        <input type="text" id="company"
-                                                class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                                placeholder="Nombre de empresa:" name="company">
+                                        <input
+                                            type="text"
+                                            id="company"
+                                            class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
+                                            placeholder="Nombre de empresa:"
+                                            name="company"
+                                        />
                                     </div>
                                     <div class="relative">
-                                        <input type="text" id="event"
-                                                class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                                placeholder="Tipo de evento: Ejemplo: Carnaval, Fiesta patronal, Producción audiovisual, Lanzamiento de producto, Boda, etc." name="event">
+                                        <input
+                                            type="text"
+                                            id="event"
+                                            class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
+                                            placeholder="Tipo de evento: Ejemplo: Carnaval, Fiesta patronal, Producción audiovisual, Lanzamiento de producto, Boda, etc."
+                                            name="event"
+                                        />
                                     </div>
                                     <div class="relative">
-                                        <textarea name="description" id="event" cols="30" rows="10" class="py-4 ps-4 pe-40 w-full h-20 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10" placeholder="Descripción del proyecto o idea:"></textarea>
+                                        <textarea
+                                            name="description"
+                                            id="event"
+                                            cols="30"
+                                            rows="10"
+                                            class="py-4 ps-4 pe-40 w-full h-20 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
+                                            placeholder="Descripción del proyecto o idea:"
+                                        ></textarea>
                                     </div>
                                     <div class="relative">
-                                        <button type="submit"
-                                                class="inline-flex items-center justify-center gap-2 px-6 absolute top-[6px] end-[6px] h-9 transition-all bg-primary hover:bg-primary-hover border-primary hover:border-primary-hover text-white rounded-md">
+                                        <button
+                                            type="submit"
+                                            class="inline-flex items-center justify-center gap-2 px-6 absolute top-[6px] end-[6px] h-9 transition-all bg-primary hover:bg-primary-hover border-primary hover:border-primary-hover text-white rounded-md"
+                                        >
                                             Enviar
-                                            <MoveRight class="h-4 w-4"/>
-                                        </button>                                    
+                                            <MoveRight class="h-4 w-4" />
+                                        </button>
                                     </div>
                                     <!-- <input type="hidden" name="_next" value="https://krakenstudioart.com/pages/index-2"> -->
-                                    <input type="hidden" name="_captcha" value="true">
+                                    <input
+                                        type="hidden"
+                                        name="_captcha"
+                                        value="true"
+                                    />
                                 </form>
                             </div>
                         </div>
@@ -183,8 +228,6 @@ import BackToTop from "@/components/BackToTop.vue";
 
 import { Diamond, Wallet, Shapes } from "lucide-vue-next";
 const email = import.meta.env.VITE_EMAIL;
-
-
 
 const navLinks: NavBarLinkType[] = [
     {

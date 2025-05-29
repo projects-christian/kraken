@@ -13,6 +13,17 @@ export const allRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
         component: () => import("@/views/pages/index-1/index.vue"),
     },
     {
+        path: "/servicios",
+        name: "services",
+        component: () => import("@/views/services/archive-service/index.vue"),
+    },
+    {
+        path: "/servicios/:slug",
+        name: "service-detail",
+        component: () =>
+            import("@/views/services/individual-service/service.vue"),
+    },
+    {
         path: "/pages/",
         children: [
             {
@@ -109,5 +120,10 @@ export const allRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
                 component: () => import("@/views/auth/logout.vue"),
             },
         ],
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "NotFound",
+        component: () => import("@/views/NotFound.vue"),
     },
 ];

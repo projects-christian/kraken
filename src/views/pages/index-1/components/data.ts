@@ -45,6 +45,7 @@ export const categories: CategoryType[] = [
     {
         image: nftArt4,
         name: "Carrozas",
+        link: "/carrozas",
         creator: {
             image: avatar1,
             username: "@Nikom",
@@ -62,6 +63,7 @@ export const categories: CategoryType[] = [
     {
         image: nftArt5,
         name: "Piezas artisticas",
+        link: "/piezas-artisticas",
         creator: {
             image: avatar3,
             username: "@Mexi",
@@ -76,6 +78,7 @@ export const categories: CategoryType[] = [
     {
         image: nftArt6,
         name: "Esculturas y Macroesculturas",
+        link: "/esculturas-y-macroesculturas",
         creator: {
             image: avatar4,
             username: "@Astro",
@@ -91,6 +94,7 @@ export const categories: CategoryType[] = [
     {
         image: nftArt7,
         name: "Sets de rodaje para cine y TV",
+        link: "/sets-de-rodaje-para-cine-y-tv",
         creator: {
             image: avatar5,
             username: "@Aliza",
@@ -108,6 +112,7 @@ export const categories: CategoryType[] = [
     {
         image: nftArt8,
         name: "Estatuillas para premios",
+        link: "/estatuillas-para-premios",
         creator: {
             image: avatar8,
             username: "@Tony",
@@ -122,6 +127,7 @@ export const categories: CategoryType[] = [
     {
         image: nftArt9,
         name: "Ambientación de lugar",
+        link: "/ambientacion-de-lugar",
         creator: {
             image: avatar9,
             username: "@Alabto",
@@ -136,6 +142,7 @@ export const categories: CategoryType[] = [
     {
         image: nftArt14,
         name: "Creación de disfraces",
+        link: "/creacion-de-disfraces",
         creator: {
             image: avatar10,
             username: "@Minato",
@@ -153,6 +160,7 @@ export const categories: CategoryType[] = [
     {
         image: nftArt22,
         name: "Parques temáticos",
+        link: "/parques-tematicos",
         creator: {
             image: avatar11,
             username: "@Tamari",
@@ -309,34 +317,34 @@ export const footerItems: FooterItemType[] = [
             },
         ],
     },
-    {
-        title: "Recursos",
-        links: [
-            {
-                label: "",
-                route: {},
-            },
-            {
-                label: "",
-                route: {},
-            },
-            {
-                label: "",
-                route: {},
-            },
-        ],
-    },
-    {
-        title: "Compañia",
-        links: [
-            {
-                label: "",
-                route: {},
-            },
-            {
-                label: "",
-                route: {},
-            },
-        ],
-    },
+    // {
+    //     title: "Recursos",
+    //     links: [
+    //         {
+    //             label: "",
+    //             route: {},
+    //         },
+    //         {
+    //             label: "",
+    //             route: {},
+    //         },
+    //         {
+    //             label: "",
+    //             route: {},
+    //         },
+    //     ],
+    // },
+    // {
+    //     title: "Compañia",
+    //     links: [
+    //         {
+    //             label: "",
+    //             route: {},
+    //         },
+    //         {
+    //             label: "",
+    //             route: {},
+    //         },
+    //     ],
+    // },
 ];

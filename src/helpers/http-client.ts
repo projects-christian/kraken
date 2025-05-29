@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from "axios";
 
 function HttpClient() {
     return {
@@ -6,8 +6,8 @@ function HttpClient() {
         post: axios.post,
         patch: axios.patch,
         put: axios.put,
-        delete: axios.delete
-    }
+        delete: axios.delete,
+    };
 }
 
-export default HttpClient()
+export default HttpClient();

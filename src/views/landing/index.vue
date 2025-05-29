@@ -1,23 +1,21 @@
 <template>
+    <NavBar :nav-links="navLinks" />
 
-  <NavBar :nav-links="navLinks"/>
+    <Hero />
 
-  <Hero/>
+    <Demos />
 
-  <Demos/>
+    <Features />
 
-  <Features/>
+    <Footer />
 
-  <Footer/>
+    <Background1 />
 
-  <Background1/>
-
-  <BackToTop/>
-
+    <BackToTop />
 </template>
 
 <script setup lang="ts">
-import type {NavBarLinkType} from "@/types/layout";
+import type { NavBarLinkType } from "@/types/layout";
 import NavBar from "@/components/NavBar.vue";
 import Hero from "@/views/landing/components/Hero.vue";
 import Demos from "@/views/landing/components/Demos.vue";
@@ -27,20 +25,20 @@ import Background1 from "@/components/Background1.vue";
 import BackToTop from "@/components/BackToTop.vue";
 
 const navLinks: NavBarLinkType[] = [
-  {
-    id: 'home',
-    label: 'Home',
-    route: {url: '#home'}
-  },
-  {
-    id: 'demo',
-    label: 'Demo',
-    route: {url: '#demo'}
-  },
-  {
-    id: 'features',
-    label: 'Features',
-    route: {url: '#features'}
-  }
-]
+    {
+        id: "home",
+        label: "Home",
+        route: { url: "#home" },
+    },
+    {
+        id: "demo",
+        label: "Demo",
+        route: { url: "#demo" },
+    },
+    {
+        id: "features",
+        label: "Features",
+        route: { url: "#features" },
+    },
+];
 </script>
