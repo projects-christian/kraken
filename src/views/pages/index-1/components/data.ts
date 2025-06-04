@@ -59,6 +59,7 @@ export const categories: CategoryType[] = [
         sale: {
             endDate: addOrSubtractDaysFromDate(10, true),
         },
+        isLiked: true,
     },
     {
         image: nftArt5,
@@ -74,6 +75,7 @@ export const categories: CategoryType[] = [
             current: 12.5,
             last: 25.04,
         },
+        isLiked: true,
     },
     {
         image: nftArt6,
@@ -108,6 +110,7 @@ export const categories: CategoryType[] = [
         sale: {
             endDate: addOrSubtractDaysFromDate(4, true),
         },
+        isLiked: true,
     },
     {
         image: nftArt8,
@@ -123,6 +126,7 @@ export const categories: CategoryType[] = [
             current: 20.42,
             last: 18.96,
         },
+        isLiked: true,
     },
     {
         image: nftArt9,
@@ -138,6 +142,7 @@ export const categories: CategoryType[] = [
             current: 24.96,
             last: 40.22,
         },
+        isLiked: true,
     },
     {
         image: nftArt14,
@@ -156,6 +161,7 @@ export const categories: CategoryType[] = [
         sale: {
             endDate: addOrSubtractDaysFromDate(7, true),
         },
+        isLiked: true,
     },
     {
         image: nftArt22,
@@ -171,6 +177,7 @@ export const categories: CategoryType[] = [
             current: 42.52,
             last: 20.42,
         },
+        isLiked: true,
     },
 ];
 

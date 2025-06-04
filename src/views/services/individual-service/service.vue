@@ -3,8 +3,11 @@
 
     <Hero :title="service?.title" :description="service?.description" :image="service?.image"/>
 
-    <AIMade :imagesShowcase1="service?.imagesShowcase1" :imagesShowcase2="service?.imagesShowcase2" />
-
+    <AIMade
+        v-if="service?.imagesShowcase1 && service.imagesShowcase1.length"
+        :imagesShowcase1="service.imagesShowcase1"
+        :imagesShowcase2="service.imagesShowcase2"
+    />
     <Features />
 
     <FAQs />
