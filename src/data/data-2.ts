@@ -1,7 +1,7 @@
 import type {
     FeatureType,
     TestimonialType,
-} from "@/src/views/services/individual-service/components/types";
+} from "@/views/pages/services/individual-service/components/types";
 
 import { Activity, Layers, Dribbble } from "lucide-vue-next";
 

@@ -110,8 +110,8 @@
 
 <script setup lang="ts">
 import { Badge, Triangle } from "lucide-vue-next";
-import nftArt5 from "@/assets/images/nft/art/carrosa-festival.png";
-import nftArt6 from "@/assets/images/nft/art/cocodrilo.png";
-import nftArt18 from "@/assets/images/nft/art/dinosaurio-left.png";
-import nftArt22 from "@/assets/images/nft/art/mamut.png";
+import nftArt5 from "@/assets/images/hero/carrosa-festival.png";
+import nftArt6 from "@/assets/images/hero/cocodrilo.png";
+import nftArt18 from "@/assets/images/hero/dinosaurio-left.png";
+import nftArt22 from "@/assets/images/hero/mamut.png";
 </script>

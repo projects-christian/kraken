@@ -1,7 +1,7 @@
 <template>
     <NavBar :nav-links="navLinks" />
 
-    <Hero :title="service?.title" :description="service?.description" :image="service?.image"/>
+    <Hero :name="service?.name" :description="service?.description" :image="service?.image"/>
 
     <AIMade
         v-if="service?.imagesShowcase1 && service.imagesShowcase1.length"
@@ -22,14 +22,14 @@
 <script setup lang="ts">
 import { onMounted, computed } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { services } from "@/views/services/individual-service/components/data";
+import { categories } from "@/data/data";
 
 import type { NavBarLinkType } from "@/types/layout";
 import NavBar from "@/components/NavBar.vue";
-import Hero from "@/views/services/individual-service/components/Hero.vue";
-import AIMade from "@/views/services/individual-service/components/AIMade.vue";
+import Hero from "@/views/pages/services/individual-service/components/Hero.vue";
+import AIMade from "@/views/pages/services/individual-service/components/AIMade.vue";
 
-import Features from "@/views/services/individual-service/components/Features.vue";
+import Features from "@/views/pages/services/individual-service/components/Features.vue";
 
 import FAQs from "@/views/pages/index-1/components/FAQs.vue";
 import Footer from "@/views/pages/index-1/components/Footer.vue";
@@ -37,15 +37,15 @@ import Background2 from "@/components/Background2.vue";
 import BackToTop from "@/components/BackToTop.vue";
 
 // Función para convertir slug a clave válida del objeto
-function normalizeSlug(slug) {
-    return slug.replace(/-/g, "").toLowerCase();
-}
+// function normalizeSlug(slug) {
+//     return slug.replace(/-/g, "").toLowerCase();
+// }
 
 const route = useRoute();
 const router = useRouter();
 
 const service = computed(() =>
-    services.find((s) => s.slug === route.params.slug),
+    categories.find((s) => s.slug === route.params.slug),
 );
 
 // Redirigir si no existe el servicio

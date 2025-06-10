@@ -43,6 +43,6 @@
 </template>
 
 <script setup lang="ts">
-import { browseByCategory } from "@/views/pages/index-1/components/data";
+import { browseByCategory } from "@/data/data";
 import { MoveRight } from "lucide-vue-next";
 </script>

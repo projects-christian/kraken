@@ -27,7 +27,7 @@
                                 <h1
                                     class="md:text-5xl/tight text-4xl font-medium text-white max-w-lg my-4"
                                 >
-                                    {{ title }}
+                                    {{ name }}
                                 </h1>
                                 <p class="md:text-lg text-default-300" v-html="description"></p>
 
@@ -52,7 +52,7 @@
                                 <img
                                     class="mx-auto h-full w-full object-cover object-top ransition duration-500 group-hover:scale-105"
                                     :src="image"
-                                    :alt="title"
+                                    :alt="name"
                                     loading="lazy"
                                     width="640"
                                     height="805"
@@ -69,7 +69,7 @@
 <script setup lang="ts">
 
 defineProps({
-    title: String,
+    name: String,
     image: String,
     description: String,
 });

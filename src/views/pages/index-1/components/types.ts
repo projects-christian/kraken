@@ -18,7 +18,12 @@ export type CreatorType = {
 export type CategoryType = {
     image: string;
     name: string;
+    slug: string;
     creator: CreatorType;
+    intro: string;
+    description: string;
+    imagesShowcase1: string[];
+    imagesShowcase2: string[];
     bid: {
         current: number;
         last: number;

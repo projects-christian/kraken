@@ -31,6 +31,6 @@
 
 <script setup lang="ts">
 import BlogCard from "@/views/pages/index-1/components/BlogCard.vue";
-import { blogs } from "@/views/pages/index-1/components/data";
+import { blogs } from "@/data/data";
 import { MoveRight } from "lucide-vue-next";
 </script>

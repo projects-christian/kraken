@@ -1,6 +1,6 @@
 <template>
     <router-link
-        :to="`/servicios${item.link}`"
+        :to="`/servicios/${item.slug}`"
         class="group relative overflow-hidden backdrop-blur-3xl bg-default-950/40 rounded-lg duration-500 ease-in-out"
         data-aos="zoom-in"
         data-aos-duration="800"
@@ -67,7 +67,7 @@
                 <div class="flex items-center justify-between">
                     <div>
                         <span class="block font-small text-default-100">{{
-                            item.description
+                            item.intro
                         }}</span>
                         <!-- <span class="block font-medium text-primary"><i
                 class="mdi mdi-ethereum text-xl leading-none text-primary me-1"></i>{{ item.bid.current }} ETH</span> -->

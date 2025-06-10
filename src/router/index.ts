@@ -15,7 +15,7 @@ const router = createRouter({
     routes: allRoutes,
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
-            return savedPosition;
+            return { top: 0 }
         }
 
         if (to.hash) {

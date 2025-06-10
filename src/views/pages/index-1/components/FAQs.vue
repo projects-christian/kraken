@@ -62,5 +62,5 @@
 <script setup lang="ts">
 import { ChevronUp, HelpCircle } from "lucide-vue-next";
 import { chunkArray } from "@/helpers/array";
-import { faqs } from "@/views/pages/index-1/components/data";
+import { faqs } from "@/data/data";
 </script>

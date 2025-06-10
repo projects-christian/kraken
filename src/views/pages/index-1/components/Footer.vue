@@ -83,5 +83,5 @@
 import logo from "@/assets/images/logo-kraken.png";
 import { CircleSlash, Heart } from "lucide-vue-next";
 import { currentYear, appName, appAuthor, socialLinks } from "@/helpers";
-import { footerItems } from "@/views/pages/index-1/components/data";
+import { footerItems } from "@/data/data";
 </script>

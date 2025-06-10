@@ -15,13 +15,13 @@ export const allRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
     {
         path: "/servicios",
         name: "services",
-        component: () => import("@/views/services/archive-service/index.vue"),
+        component: () => import("@/views/pages/services/archive-service/index.vue"),
     },
     {
         path: "/servicios/:slug",
         name: "service-detail",
         component: () =>
-            import("@/views/services/individual-service/service.vue"),
+            import("@/views/pages/services/individual-service/service.vue"),
     },
     {
         path: "/pages/",

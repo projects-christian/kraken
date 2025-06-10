@@ -19,6 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import FeatureCard from "@/views/services/individual-service/components/FeatureCard.vue";
-import { features } from "@/views/services/individual-service/components/data";
+import FeatureCard from "@/views/pages/services/individual-service/components/FeatureCard.vue";
+import { features } from "@/data/data";
 </script>
