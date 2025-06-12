@@ -7,9 +7,9 @@
     >
         <div class="text-center">
             <component :is="item.icon" class="h-10 w-10 text-primary mx-auto" />
-            <h2 class="text-2xl font-medium text-default-200 mt-4">
+            <h3 class="text-2xl font-medium text-default-200 mt-4">
                 {{ item.title }}
-            </h2>
+            </h3>
             <p class="text-base font-normal text-default-300 mt-4">
                 {{ item.description }}
             </p>

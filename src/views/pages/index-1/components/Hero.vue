@@ -28,7 +28,7 @@
                                     ></span>
                                     Aquí respiras arte
                                 </span>
-                                <h4
+                                <h1
                                     class="font-semibold text-4xl/tight lg:text-6xl/tight capitalize text-white mb-4"
                                 >
                                     <span
@@ -36,7 +36,7 @@
                                         >Kraken Studio Art</span
                                     >
                                     escenografia, carrozas y ambientación.
-                                </h4>
+                                </h1>
                                 <p
                                     class="text-lg max-w-xl text-default-200 mb-6"
                                 >

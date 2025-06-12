@@ -41,7 +41,7 @@
                             class="rounded-full h-10 w-10"
                             alt=""
                         />
-                        <span>
+                        <h3>
                             <a
                                 href="#"
                                 class="text-md font-semibold text-default-100 hover:text-primary"
@@ -49,7 +49,7 @@
                                 {{ item.name }}
                             </a>
                             <!-- <span class="text-xs text-default-100 block">{{ item.creator.username }}</span> -->
-                        </span>
+                        </h3>
                     </div>
                     <a
                         href="#"

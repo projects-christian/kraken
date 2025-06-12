@@ -33,10 +33,10 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             :aria-controls="`faq-${index + 1}-${idx + 1}`"
                         >
-                            <h5 class="text-base font-semibold flex">
+                            <h4 class="text-base font-semibold flex">
                                 <HelpCircle class="h-5 w-5 stroke-white me-3" />
                                 {{ item.question }}
-                            </h5>
+                            </h4>
                             <ChevronUp
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"
                             />

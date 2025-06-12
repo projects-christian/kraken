@@ -5,9 +5,9 @@ import favicon from "@/assets/images/favicon.ico";
 
 export const appName: string = "Kraken";
 export const appTitle: string =
-    "kraken Studio Art - Maximizamos el impacto visual de los espacios";
+    "Carrozas, ambientación de eventos, esculturas - kraken Studio Art";
 export const appDescription: string =
-    "Tailwind CSS AI Startup & Technology Saas & AI Software Landing Page Template, ai agency, ai application, ai business, ai, creative ai art, ai it solutions, modern web ai, multipurpose, saas, nft art, nft software, tailwind css.";
+    "omos expertos para crear lo que necesites para todo tipo de eventos: Carnavales, Procesiones religiosas, Desfiles temáticos, Fiestas patronales, Lanzamientos de productos, Stands para ferias comerciales, etc.";
 export const appAuthor: string = "Alius Corp";
 export const appAuthorWebsite: string = "https://coderthemes.com/";
 
