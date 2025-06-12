@@ -97,9 +97,10 @@
 
 <script setup lang="ts">
 import { MoveRight } from "lucide-vue-next";
-defineProps({
-    imagesShowcase1: Array,
-    imagesShowcase2: Array,
-});
+
+defineProps<{
+  imagesShowcase1: string[],
+  imagesShowcase2: string[],
+}>();
 </script>
 

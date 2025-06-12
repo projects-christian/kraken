@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 import type { PropType } from "vue";
-import type { FeatureType } from "@/views/services/individual-service/components/types";
+import type { FeatureType } from "@/views/pages/services/individual-service/components/types";
 import { MoveRight } from "lucide-vue-next";
 
 defineProps({

@@ -15,6 +15,7 @@ import { createPinia } from "pinia";
 
 AOS.init();
 
+import { ViteSSG } from 'vite-ssg'
 import App from "./App.vue";
 import router from "./router";
 
