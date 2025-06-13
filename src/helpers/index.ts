@@ -7,7 +7,7 @@ export const appName: string = "Kraken";
 export const appTitle: string =
     "Carrozas, ambientación de eventos, esculturas - kraken Studio Art";
 export const appDescription: string =
-    "omos expertos para crear lo que necesites para todo tipo de eventos: Carnavales, Procesiones religiosas, Desfiles temáticos, Fiestas patronales, Lanzamientos de productos, Stands para ferias comerciales, etc.";
+    "Somos expertos para crear lo que necesites para todo tipo de eventos: Carnavales, Procesiones religiosas, Desfiles temáticos, Fiestas patronales, Lanzamientos de productos, Stands para ferias comerciales, etc.";
 export const appAuthor: string = "Alius Corp";
 export const appAuthorWebsite: string = "https://coderthemes.com/";
 

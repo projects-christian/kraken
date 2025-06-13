@@ -1,6 +1,6 @@
 <template>
     <router-link :to="{ name: 'landing' }" class="logo">
-        <img :src="logo" class="h-10" alt="WebAi Logo" />
+        <img :src="logo" class="h-10" alt="Logo Kraken Studio Art" />
     </router-link>
 </template>
 

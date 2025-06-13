@@ -72,12 +72,12 @@
                                     <img
                                         :src="nftArt22"
                                         class="w-full h-40 md:h-[278px] rounded-lg object-cover"
-                                        alt=""
+                                        alt="pieza artistica mamut"
                                     />
                                     <img
                                         :src="nftArt18"
                                         class="w-full h-40 md:h-[278px] rounded-lg object-cover"
-                                        alt=""
+                                        alt="pieza artistica dinosaurio"
                                     />
                                 </div>
                                 <div
@@ -91,12 +91,12 @@
                                     <img
                                         :src="nftArt5"
                                         class="w-full h-40 md:h-[278px] rounded-lg object-cover"
-                                        alt=""
+                                        alt="carrosa de festival"
                                     />
                                     <img
                                         :src="nftArt6"
                                         class="w-full h-40 md:h-[278px] rounded-lg object-cover"
-                                        alt=""
+                                        alt="carrosa cocodrilo"
                                     />
                                 </div>
                             </div>

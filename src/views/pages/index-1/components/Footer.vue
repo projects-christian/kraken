@@ -4,7 +4,7 @@
             <div class="flex flex-col lg:flex-row justify-between gap-14 py-24">
                 <div class="lg:w-3/12">
                     <a href="#" class="flex items-center gap-2 logo">
-                        <img :src="logo" class="w-36" alt="" />
+                        <img :src="logo" class="w-36" alt="logo kraken studio art" />
                     </a>
 
                     <p

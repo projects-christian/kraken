@@ -233,7 +233,7 @@ const navLinks: NavBarLinkType[] = [
     {
         id: "home",
         label: "Inicio",
-        route: { url: "#home" },
+        route: { url: "/" },
     },
     {
         id: "categories",

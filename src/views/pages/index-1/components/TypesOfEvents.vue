@@ -16,9 +16,9 @@
                         :key="idx"
                         class="py-3"
                     >
-                        <h2 class="text-5xl font-medium text-white">
+                        <h3 class="text-5xl font-medium text-white">
                             {{ item }}
-                        </h2>
+                        </h3>
                     </div>
                 </div>
 
@@ -31,9 +31,9 @@
                         :key="idx"
                         class="py-3"
                     >
-                        <h2 class="text-5xl font-medium text-white">
+                        <h3 class="text-5xl font-medium text-white">
                             {{ item }}
-                        </h2>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -49,9 +49,9 @@
                         :key="idx"
                         class="py-3"
                     >
-                        <h2 class="text-5xl font-medium text-white">
+                        <h3 class="text-5xl font-medium text-white">
                             {{ item }}
-                        </h2>
+                        </h3>
                     </div>
                 </div>
 
@@ -64,9 +64,9 @@
                         :key="idx"
                         class="py-3"
                     >
-                        <h2 class="text-5xl font-medium text-white">
+                        <h3 class="text-5xl font-medium text-white">
                             {{ item }}
-                        </h2>
+                        </h3>
                     </div>
                 </div>
             </div>
