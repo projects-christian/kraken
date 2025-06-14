@@ -82,19 +82,14 @@ const features1: string[] = [
     "Fiestas patronales",
     "Ferias y exposiciones",
     "Eventos empresariales",
-    "Cumpleaños temáticos",
-    "Eventos municipales o gubernamentales",
     "Escenografías para cine o televisión",
 ];
 const features2: string[] = [
     "Festivales culturales",
-    "Fiestas de fin de año",
-    "Lanzamientos de productos",
     "Stands para ferias comerciales",
-    "Casamientos y celebraciones sociales",
-    "Eventos escolares o institucionales",
     "Peñas y encuentros folclóricos",
     "Fiestas temáticas privadas",
+    "Eventos municipales o gubernamentales",
     "Presentaciones teatrales",
 ];
 </script>
