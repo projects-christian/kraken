@@ -84,6 +84,10 @@ export const categories: CategoryType[] = [
         image: carrozas,
         name: "Carrozas",
         slug: "carrozas",
+        meta: {
+            title: "carrozas",
+            description: "Diseño de carrozas nauticas y terrestres, con materiales ligeros y resistentes."
+        },
         creator: {
             image: carrozas,
             username: "@Nikom",
@@ -106,6 +110,10 @@ export const categories: CategoryType[] = [
         image: piezasArtisticas,
         name: "Piezas artisticas",
         slug: "piezas-artisticas",
+        meta: {
+            title: "Piezas artisticas",
+            description: "Creación de piezas y figuras que decoran  el entorno del evento."
+        },
         creator: {
             image: piezasArtisticas,
             username: "@Mexi",
@@ -125,6 +133,10 @@ export const categories: CategoryType[] = [
         image: esculturas,
         name: "Esculturas y Macroesculturas",
         slug: "esculturas-y-macroesculturas",
+        meta: {
+            title: "Esculturas y Macroesculturas",
+            description: "Esculturas a gran escala con acabados de calidad y durabilidad."
+        },
         creator: {
             image: esculturas,
             username: "@Astro",
@@ -144,6 +156,10 @@ export const categories: CategoryType[] = [
         image: setDeRodaje,
         name: "Sets de rodaje para cine y TV",
         slug: "sets-de-rodaje-para-cine-y-tv",
+        meta: {
+            title: "Sets de rodaje para cine y TV",
+            description: "Transformamos espacios existentes en los escenarios requeridos por el guion."
+        },
         creator: {
             image: setDeRodaje,
             username: "@Aliza",
@@ -166,6 +182,10 @@ export const categories: CategoryType[] = [
         image: estatuillas,
         name: "Estatuillas para premios",
         slug: "estatuillas-para-premios",
+        meta: {
+            title: "Estatuillas para premios",
+            description: "Diseños unicos y exclusivos para que cada una sea un objeto de colección."
+        },
         creator: {
             image: estatuillas,
             username: "@Tony",
@@ -185,6 +205,10 @@ export const categories: CategoryType[] = [
         image: ambientacion,
         name: "Ambientación de lugar",
         slug: "ambientacion-de-lugar",
+        meta: {
+            title: "Ambientación de lugar",
+            description: "Creamos ambientaciones temáticas para eventos especiales, lanzamientos de productos, celebraciones y más."
+        },
         creator: {
             image: ambientacion,
             username: "@Alabto",
@@ -204,6 +228,10 @@ export const categories: CategoryType[] = [
         image: disfraces,
         name: "Creación de disfraces",
         slug: "creacion-de-disfraces",
+        meta: {
+            title: "Creación de disfraces",
+            description: "Elaborados y detallados con alta calidad acorde a la tematica del evento."
+        },
         creator: {
             image: disfraces,
             username: "@Minato",
@@ -226,12 +254,16 @@ export const categories: CategoryType[] = [
         image: parquesTematicos,
         name: "Parques temáticos",
         slug: "parques-tematicos",
+        meta: {
+            title: "Parques temáticos",
+            description: "Implica la transformación de espacios en mundos fantásticos."
+        },
         creator: {
             image: parquesTematicos,
             username: "@Tamari",
         },
         intro:
-            "Implica la transformación de espacios en mundos fantásticos",
+            "Implica la transformación de espacios en mundos fantásticos.",
         description: "Somos expertos en revitalizar y transformar parques temáticos, convirtiendo atracciones anticuadas en experiencias inolvidables,Ofrecemos soluciones integrales, desde el rediseño de atracciones existentes y la conceptualización de nuevas áreas temáticas, hasta la implementación de tecnologías de vanguardia y mejoras en la experiencia del cliente.",
         imagesShowcase1: [],
         imagesShowcase2: [],
@@ -349,19 +381,27 @@ export const footerItems: FooterItemType[] = [
         links: [
             {
                 label: "Carrozas",
-                route: {},
+                route: {
+                    url: "/servicios/carrozas"
+                },
             },
             {
                 label: "Piezas artisticas",
-                route: {},
+                route: {
+                    url: "/servicios/piezas-artisticas"
+                },
             },
             {
                 label: "Esculturas y Macroesculturas",
-                route: {},
+                route: {
+                    url: "servicios/esculturas-y-macroesculturas"
+                },
             },
             {
                 label: "Sets de rodaje para cine y TV",
-                route: {},
+                route: {
+                    url: "/servicios/sets-de-rodaje-para-cine-y-tv"
+                },
             },
         ],
     },
@@ -370,19 +410,27 @@ export const footerItems: FooterItemType[] = [
         links: [
             {
                 label: "Estatuillas para premios",
-                route: {},
+                route: {
+                    url: "/servicios/estatuillas-para-premios"
+                },
             },
             {
                 label: "Ambientación de lugar",
-                route: {},
+                route: {
+                    url: "/servicios/ambientacion-de-lugar"
+                },
             },
             {
                 label: "Creación de disfraces",
-                route: {},
+                route: {
+                    url: "/servicios/creacion-de-disfraces"
+                },
             },
             {
                 label: "Parques temáticos",
-                route: {},
+                route: {
+                    url: "/servicios/parques-tematicos"
+                },
             },
         ],
     },

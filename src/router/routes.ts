@@ -16,12 +16,19 @@ export const allRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
         path: "/servicios",
         name: "services",
         component: () => import("@/views/pages/services/archive-service/index.vue"),
+        meta: {
+            title: "servicios | Kraken Studio",
+            description: "Pagina de servicios",
+        },
     },
     {
         path: "/servicios/:slug",
         name: "service-detail",
-        component: () =>
-            import("@/views/pages/services/individual-service/service.vue"),
+        component: () => import("@/views/pages/services/individual-service/service.vue"),
+        meta: {
+            title: "servicios | Kraken Studio",  // <- Este lo puedes personalizar luego dinámicamente
+            description: "Pagina de servicios",
+        },
     },
     {
         path: "/pages/",

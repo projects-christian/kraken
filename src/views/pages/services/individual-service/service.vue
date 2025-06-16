@@ -20,8 +20,8 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, computed } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import { onMounted, computed } from "vue";
 import { categories } from "@/data/data";
 
 import type { NavBarLinkType } from "@/types/layout";
@@ -50,6 +50,22 @@ const service = computed(() =>
 
 // Redirigir si no existe el servicio
 onMounted(() => {
+    const slug = route.params.slug as string;
+    const metaService = categories.find((s) => s.slug === slug);
+
+    if (metaService) {
+        document.title = `${metaService.meta.title} | Kraken Studio Art`;
+        
+        const descriptionTag = document.querySelector("meta[name='description']");
+        if (descriptionTag) {
+            // Elimina etiquetas HTML si las hay
+            descriptionTag.setAttribute(
+                "content",
+                metaService.meta.description.replace(/<[^>]*>/g, "")
+            );
+        }
+    }
+    
     if (!service.value) {
         router.replace("/404");
     }

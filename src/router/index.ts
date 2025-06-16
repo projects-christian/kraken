@@ -41,11 +41,18 @@ const router = createRouter({
 
 // set page title
 router.beforeEach((to, from, next) => {
-    const title = to.meta.title;
-    if (title) {
-        document.title = title + " | " + appTitle;
+    const metaTitle = to.meta.title;
+    const metaDescription = to.meta.description;
+
+    if (metaTitle) {
+        document.title = metaTitle;
     } else {
         document.title = appTitle;
+    }
+
+    const descriptionTag = document.querySelector("meta[name='description']");
+    if (descriptionTag && metaDescription) {
+        descriptionTag.setAttribute("content", metaDescription);
     }
 
     next();

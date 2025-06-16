@@ -19,6 +19,10 @@ export type CategoryType = {
     image: string;
     name: string;
     slug: string;
+    meta: {
+        title: string;
+        description: string;
+    },
     creator: CreatorType;
     intro: string;
     description: string;
