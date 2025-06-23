@@ -1,0 +1,185 @@
+{
+    "_commentMetaMainPage": "Meta main page avery language",
+    "meta": {
+        "app": {
+            "title": "Carri allegorici, scenografie per eventi, sculture – Kraken Studio Art",
+            "description": "Studio specializzato nella creazione di carrozze, scenografie, sculture, set televisivi e ambientazioni artistiche per eventi culturali."
+        }
+    },
+    "_comment": "Navbar section",
+    "navbar": {
+        "home": "Home",
+        "services": "Servizi",
+        "events": "Tipi di eventi",
+        "showcase": "Vetrina",
+        "faq": "FAQ",
+        "contact": "Contattaci"
+    },
+    "_commentHero": "Hero section",
+    "homeHero": {
+        "title": "Scenografie, carri allegorici e ambientazione.",
+        "description": "Siamo esperti nel creare tutto ciò di cui avete bisogno per tutti i tipi di eventi: carnevali, processioni religiose, sfilate a tema, feste patronali, lanci di prodotti, stand fieristici, ecc.",
+        "phrase": "Qui si respira arte"
+    },
+    "_commentServices": "Services section",
+    "homeServices": {
+        "title": "Servizi",
+        "description": "Massimizziamo l'impatto visivo, assicurandoci che ogni dettaglio venga catturato, creando un'atmosfera magica, vibrante e memorabile."
+    },
+    "_commentCategories": "categories from data.ts file",
+    "categories": {
+        "floats": {
+            "name": "Galleggia",
+            "meta": {
+                "title": "Galleggia",
+                "description": "Progettazione di imbarcazioni nautiche e terrestri, utilizzando materiali leggeri e durevoli"
+            },
+            "intro": "Progettazione di imbarcazioni nautiche e terrestri, utilizzando materiali leggeri e durevoli.",
+            "description": "<b>Carrozze terrestri - Carrozze acquatiche</b>: Progettiamo ogni tipo di carrozza con la dinamica che desideri esporre o creare, basandoci sul tema o sulle fiere designate."
+        },
+        "artisticPieces": {
+            "name": "Pezzi artistici",
+            "meta": {
+                "title": "Pezzi artistici",
+                "description": "Creazione di pezzi e figure che decorano l'ambiente dell'evento"
+            },
+            "intro": "Creazione di pezzi e figure che decorano l'ambiente dell'evento.",
+            "description": "Creazione di pezzi artistici che decorano l’ambiente dell’evento,come colonne decorative,figure monumentali,sculture o strutture modulari che seguano la stessa linea estetica."
+        },
+        "sculpturesAndMacrosculptures": {
+            "name": "Sculture e Macrosculture",
+            "meta": {
+                "title": "Sculture e Macrosculture",
+                "description": "Sculture di grandi dimensioni con finiture di qualità e durevolezza"
+            },
+            "intro": "Sculture di grandi dimensioni con finiture di qualità e durevolezza.",
+            "description": "Creazione di sculture macro o micro uniche che possano essere installate nei punti chiave dell’evento, come ingressi o zone ad alto traffico, realizzate con qualsiasi tipo di materiale."
+        },
+        "filmAndTvSets": {
+            "name": "Set cinematografici e televisivi",
+            "meta": {
+                "title": "Set cinematografici e televisivi",
+                "description": "Trasformiamo gli spazi esistenti negli ambienti richiesti dalla sceneggiatura"
+            },
+            "intro": "Trasformiamo gli spazi esistenti negli ambienti richiesti dalla sceneggiatura.",
+            "description": "Offriamo una vasta gamma di set cinematografici progettati e costruiti su misura per dare vita alle tue idee più ambiziose. Dalle ricostruzioni storiche dettagliate a paesaggi urbani futuristici o interni accoglienti richiesti dalla sceneggiatura."
+        },
+        "StatuettesForAwards": {
+            "name": "Statuette per premi",
+            "meta": {
+                "title": "Statuette per premi",
+                "description": "Design unici ed esclusivi, affinché ognuno diventi un pezzo da collezione"
+            },
+            "intro": "Design unici ed esclusivi, affinché ognuno diventi un pezzo da collezione.",
+            "description": "Creazione di statue esclusive per premi con design unici e personalizzati, realizzate in qualsiasi tipo di materiale."
+        },
+        "venueTheming": {
+            "name": "Allestimento scenografico",
+            "meta": {
+                "title": "Allestimento scenografico",
+                "description": "Creiamo ambientazioni a tema per eventi speciali, lanci di prodotti, celebrazioni e molto altro"
+            },
+            "intro": "Creiamo ambientazioni a tema per eventi speciali, lanci di prodotti, celebrazioni e molto altro.",
+            "description": "Offriamo un servizio completo di allestimento per una vasta gamma di luoghi: da eventi aziendali e celebrazioni sociali a spazi commerciali, hotel, ristoranti e abitazioni. Il nostro team di designer e creativi si immerge nella tua visione, comprendendo l'essenza del tuo marchio o dei tuoi desideri personali per sviluppare una proposta su misura."
+        },
+        "creatingCostumes": {
+            "name": "Creazione di costumi",
+            "meta": {
+                "title": "Creazione di costumi",
+                "description": "Elaborato e dettagliato, di alta qualità e in linea con il tema dell'evento"
+            },
+            "intro": "Elaborato e dettagliato, di alta qualità e in linea con il tema dell'evento.",
+            "description": "Progettazione di costumi elaborati e dettagliati realizzati con qualsiasi tipo di materiale per i partecipanti, in linea con il tema dell’evento (marittimo, storico, fantastico, ecc.)."
+        },
+        "themeParks": {
+            "name": "Parchi a tema",
+            "meta": {
+                "title": "Parchi a tema",
+                "description": "Comporta la trasformazione degli spazi in mondi fantastici"
+            },
+            "intro": "Comporta la trasformazione degli spazi in mondi fantastici.",
+            "description": "Siamo esperti nel rivitalizzare e trasformare i parchi a tema, convertendo attrazioni datate in esperienze indimenticabili. Offriamo soluzioni complete, dalla riprogettazione di attrazioni esistenti e la conceptualizzazione di nuove aree tematiche, fino all'implementazione di tecnologie all'avanguardia e al miglioramento dell'esperienza del visitatore."
+        }
+        
+    },
+    "_commentEvents": "Types of events section",
+    "homeEvents": {
+        "nameOne": "Carnevale",
+        "nameTwo": "Processioni religiose",
+        "nameThree": "Sfilate a tema",
+        "nameFour": "Feste patronali",
+        "nameFive": "Fiere e mostre",
+        "nameSix": "Eventi aziendali",
+        "nameSeven": "Scenografie per film o TV",
+        "nameEight": "Festival culturali",
+        "nameNine": "Stand per fiere",
+        "nameTen": "Gruppi folkloristici e raduni",
+        "nameEleven": "Feste private a tema",
+        "nameTwelve": "Eventi municipali o governativi",
+        "nameThirteen": "Spettacoli teatrali"
+    },
+    "_commentShowcase": "Hero section",
+    "homeShowcase": {
+        "title": "Lavori finiti",
+        "description": "Scopri alcuni dei nostri lavori in ambito di scenografie, carri allegorici e decorazioni. Idee che prendono vita attraverso design, tecnica e passione."
+    },
+    "_commentFaqs": "Faqs section",
+    "homeFaqs": {
+        "title": "Domande frequenti",
+        "description": "In questa sezione troverai le risposte alle domande più frequenti sui nostri prodotti e servizi.",
+        "questionOne": "Lavorate su misura, partendo da un'idea o un concept del cliente? ",
+        "answerOne": "Sì, tutti i nostri progetti sono personalizzati. Collaboriamo a stretto contatto con il cliente per trasformare le sue idee in design unici e funzionali.",
+        "questionTwo": "Qual è il processo di lavoro dal contatto iniziale alla consegna finale? ",
+        "answerTwo": "Iniziamo con un incontro per comprendere le vostre esigenze, poi sviluppiamo una proposta visiva e tecnica e, dopo l'approvazione, passiamo alla produzione e al montaggio.",
+        "questionThree": "Con quanto anticipo dovrei effettuare l'ordine? ",
+        "answerThree": "In caso di emergenza, contattaci e ti risponderemo. Consigliamo di contattarci con almeno 1-3 mesi di anticipo, a seconda delle dimensioni del progetto.",
+        "questionFour": "Offrite servizi di trasporto e allestimento per scenografie o carri allegorici?",
+        "answerFour": "Sì, offriamo un servizio completo, che include trasporto e allestimento presso il luogo dell'evento o dello spettacolo.",
+        "questionFive": "Eseguite lavori a livello nazionale?",
+        "answerFive": "Eseguiamo lavori a livello nazionale e internazionale.",
+        "questionSix": "Come posso richiedere un preventivo?",
+        "answerSix": "Puoi contattarci tramite il modulo sul nostro sito web, via email o telefonicamente. Raccontaci la tua idea, le date e il luogo dell'evento e ti invieremo una proposta personalizzata."
+    },
+    "_commentContact": "contact section home",
+    "homeContact": {
+        "titleOne": "Contattaci",
+        "descriptionOne": "Hai un'idea in mente? Desideri richiedere un preventivo o una consulenza? Scrivici e saremo lieti di aiutarti a dare forma al tuo progetto. Siamo qui per ascoltarti.",
+        "email": "E-mail:",
+        "phone": "",
+        "titleTwo": "Scrivici",
+        "descriptionTwo": "Puoi anche utilizzare questo modulo per contattarci, raccontandoci la tua idea o il prodotto/servizio di cui hai bisogno.",
+        "formName": "Inserisci il tuo nome:",
+        "formEmail": "Inserisci la tua email:",
+        "formCompany": "Nome dell'azienda:",
+        "formEvent": "Tipo di evento: Esempio: Carnevale, Festa del Santo Patrono, Produzione audiovisiva, Lancio di prodotto, Matrimonio, ecc.",
+        "formDescription": "Descrizione del progetto o dell'idea:",
+        "formCta": "Inviare"
+    },
+    "_commentFooter": "Footer section",
+    "footer": {
+        "phrase": "Amiamo creare oggetti che attirino l'attenzione e diano vita a ogni spazio.",
+        "creatorOne": "Creato",
+        "creatorTwo": "da",
+        "colOneTitle": "servizi",
+        "colTwoTitle": "servizi"
+    },
+    "_commentServicesHero": "Hero - service pages",
+    "servicesHero": {
+        "phrase": "realizzati da esperti"
+    },
+    "_commentServicesAiMade": "AiMade - service pages",
+    "servicesAiMade": {
+        "title": "Lavori svolti",
+        "description": "Una piccola selezione dei nostri precedenti lavori in eventi nazionali e internazionali con finiture eccezionali."
+    },
+    "_commentServicesFeatures": "Features - service pages",
+    "servicesFeatures": {
+        "title": "Vantaggi di lavorare con Kraken Studio Art",
+        "colOneTitle": "Design personalizzato al 100%",
+        "colOneDescription": "Ogni progetto è creato su misura, adattato alla tua idea, tema, budget e obiettivi. Nulla è generico.",
+        "colTwoTitle": "Ampia esperienza in tutti i tipi di eventi",
+        "colTwoDescription": "Carnevali, processioni, fiere, cinema, teatro, lancio di prodotti, feste... conosciamo i tempi, le esigenze e le dinamiche di ogni formato.",
+        "colThreeTitle": "Consegne puntuali e gestione professionale",
+        "colThreeDescription": "Rispettiamo i tempi di produzione e montaggio. Coordiniamo ogni fase del progetto con serietà e responsabilità."
+    }
+}

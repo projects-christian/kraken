@@ -2,12 +2,23 @@ import type { CurrencyType, SocialLinkType } from "@/types";
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-vue-next";
 
 import favicon from "@/assets/images/favicon.ico";
+import i18n from "@/i18n";
 
 export const appName: string = "Kraken";
+
+export const getAppTitle = (): string => {
+  return i18n.global.t("meta.app.title", i18n.global.locale.value);
+};
+export const getAppDescription = (): string => {
+  return i18n.global.t("meta.app.description", i18n.global.locale.value);
+};
+
 export const appTitle: string =
-    "Carrozas, ambientación de eventos, esculturas - kraken Studio Art";
+    "Floats, event decor, sculptures – Kraken Studio Art";
+
 export const appDescription: string =
-    "Somos expertos para crear lo que necesites para todo tipo de eventos: Carnavales, Procesiones religiosas, Desfiles temáticos, Fiestas patronales, Lanzamientos de productos, Stands para ferias comerciales, etc.";
+    "Studio specialized in the creation of floats, scenography, sculptures, TV sets, and artistic environments for cultural events.";
+
 export const appAuthor: string = "Alius Corp";
 export const appAuthorWebsite: string = "https://coderthemes.com/";
 

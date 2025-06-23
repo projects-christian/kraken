@@ -75,21 +75,25 @@
 </template>
 
 <script setup lang="ts">
-const features1: string[] = [
-    "Carnavales",
-    "Procesiones religiosas",
-    "Desfiles temáticos",
-    "Fiestas patronales",
-    "Ferias y exposiciones",
-    "Eventos empresariales",
-    "Escenografías para cine o televisión",
-];
+import { computed } from 'vue'
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+
+const features1 = computed(() => [
+    t('homeEvents.nameOne'),
+    t('homeEvents.nameTwo'),
+    t('homeEvents.nameThree'),
+    t('homeEvents.nameFour'),
+    t('homeEvents.nameFive'),
+    t('homeEvents.nameSix'),
+    t('homeEvents.nameSeven')
+])
 const features2: string[] = [
-    "Festivales culturales",
-    "Stands para ferias comerciales",
-    "Peñas y encuentros folclóricos",
-    "Fiestas temáticas privadas",
-    "Eventos municipales o gubernamentales",
-    "Presentaciones teatrales",
+    t('homeEvents.nameEight'),
+    t('homeEvents.nameNine'),
+    t('homeEvents.nameTen'),
+    t('homeEvents.nameEleven'),
+    t('homeEvents.nameTwelve'),
+    t('homeEvents.nameThirteen')
 ];
 </script>

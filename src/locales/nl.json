@@ -1,0 +1,185 @@
+{
+    "_commentMetaMainPage": "Meta main page avery language",
+    "meta": {
+        "app": {
+            "title": "Praalwagens, evenementen-decoratie, sculpturen – Kraken Studio Art",
+            "description": "Studio gespecialiseerd in het maken van praalwagens, scenografieën, sculpturen, tv-sets en artistieke decors voor culturele evenementen."
+        }
+    },
+    "_comment": "Navbar section",
+    "navbar": {
+        "home": "Startpagina",
+        "services": "Diensten",
+        "events": "Soorten evenementen",
+        "showcase": "Showcase",
+        "faq": "Veelgestelde vragen",
+        "contact": "Contacteer ons"
+    },
+    "_commentHero": "Hero section",
+    "homeHero": {
+        "title": "Landschap, praalwagens en omgeving",
+        "description": "Wij zijn experts in het creëren van alles wat u nodig heeft voor alle soorten evenementen: carnaval, religieuze processies, themaparades, beschermheiligenfeesten, productlanceringen, beursstands, enzovoort.",
+        "phrase": "Hier adem je kunst"
+    },
+    "_commentServices": "Services section",
+    "homeServices": {
+        "title": "Diensten",
+        "description": "Wij maximaliseren de visuele impact en zorgen ervoor dat elk detail wordt vastgelegd. Zo creëren we een magische, levendige en onvergetelijke sfeer."
+    },
+    "_commentCategories": "categories from data.ts file",
+    "categories": {
+        "floats": {
+            "name": "Drijft",
+            "meta": {
+                "title": "Drijft",
+                "description": "Ontwerp van nautische en landgebonden boten, met gebruik van lichte en duurzame materialen"
+            },
+            "intro": "Ontwerp van nautische en landgebonden boten, met gebruik van lichte en duurzame materialen.",
+            "description": "<b>Terrestrische praalwagens - Aquatische praalwagens</b>: Wij ontwerpen alle soorten praalwagens met de dynamiek die je wilt tonen of creëren, gebaseerd op het aangewezen thema of de beurzen."
+        },
+        "artisticPieces": {
+            "name": "Artistieke stukken",
+            "meta": {
+                "title": "Artistieke stukken",
+                "description": "Het creëren van stukken en figuren ter decoratie van de evenementenomgeving"
+            },
+            "intro": "Het creëren van stukken en figuren ter decoratie van de evenementenomgeving.",
+            "description": "Creatie van artistieke stukken die het evenementomgeving decoreren, zoals decoratieve zuilen,monumentale figuren, sculpturen of modulaire constructies die dezelfde esthetische lijn volgen."
+        },
+        "sculpturesAndMacrosculptures": {
+            "name": "Sculpturen en macrosculpturen",
+            "meta": {
+                "title": "Sculpturen en macrosculpturen",
+                "description": "Grootschalige sculpturen met hoogwaardige afwerking en duurzaamheid"
+            },
+            "intro": "Grootschalige sculpturen met hoogwaardige afwerking en duurzaamheid.",
+            "description": "Creatie van unieke macro‑ of micro‑sculpturen die op sleutelpunten van het evenement kunnen worden geplaatst, zoals ingangen of drukbezochte zones, vervaardigd uit elk type materiaal."
+        },
+        "filmAndTvSets": {
+            "name": "film- en tv-toestellen",
+            "meta": {
+                "title": "film- en tv-toestellen",
+                "description": "Wij transformeren bestaande ruimtes naar de omgeving die het script vereist"
+            },
+            "intro": "Wij transformeren bestaande ruimtes naar de omgeving die het script vereist.",
+            "description": "Wij bieden een breed scala aan op maat ontworpen en gebouwde filmsets om je meest ambitieuze ideeën tot leven te brengen. Van gedetailleerde historische reconstructies tot futuristische stadslandschappen of gezellige interieurs die door het script vereist zijn."
+        },
+        "StatuettesForAwards": {
+            "name": "Beeldjes voor onderscheidingen",
+            "meta": {
+                "title": "Beeldjes voor onderscheidingen",
+                "description": "Unieke en exclusieve ontwerpen, zodat elk exemplaar een verzamelobject wordt"
+            },
+            "intro": "Unieke en exclusieve ontwerpen, zodat elk exemplaar een verzamelobject wordt.",
+            "description": "Het creëren van exclusieve beelden voor prijzen met unieke en op maat gemaakte ontwerpen, vervaardigd uit elk type materiaal."
+        },
+        "venueTheming": {
+            "name": "Thematische ruimte-inrichting",
+            "meta": {
+                "title": "Thematische ruimte-inrichting",
+                "description": "Wij creëren thematische decors voor speciale evenementen, productlanceringen, vieringen en meer"
+            },
+            "intro": "Wij creëren thematische decors voor speciale evenementen, productlanceringen, vieringen en meer.",
+            "description": "Wij bieden een uitgebreide locatie-inrichtingsservice voor een breed scala aan locaties: van zakelijke evenementen en sociale vieringen tot commerciële ruimtes, hotels, restaurants en woningen. Ons team van ontwerpers en creatieven duikt in jouw visie, begrijpt de essentie van jouw merk of persoonlijke wensen en ontwikkelt een op maat gemaakt voorstel."
+        },
+        "creatingCostumes": {
+            "name": "Kostuums maken",
+            "meta": {
+                "title": "Kostuums maken",
+                "description": "Uitgebreid, gedetailleerd en van hoge kwaliteit, afgestemd op het thema van het evenement"
+            },
+            "intro": "Uitgebreid, gedetailleerd en van hoge kwaliteit, afgestemd op het thema van het evenement.",
+            "description": "Ontwerp van uitgewerkte en gedetailleerde kostuums, vervaardigd uit elk soort materiaal voor deelnemers, passend bij het thema van het evenement (maritiem, historisch, fantasie, enz.)."
+        },
+        "themeParks": {
+            "name": "Themaparken",
+            "meta": {
+                "title": "Themaparken",
+                "description": "Het gaat om het transformeren van ruimtes in fantastische werelden"
+            },
+            "intro": "Het gaat om het transformeren van ruimtes in fantastische werelden.",
+            "description": "Wij zijn gespecialiseerd in het revitaliseren en transformeren van themaparken, waarbij verouderde attracties worden omgevormd tot onvergetelijke ervaringen. Wij bieden integrale oplossingen, van het herontwerpen van bestaande attracties en het conceptualiseren van nieuwe themagebieden tot de implementatie van geavanceerde technologieën en verbeteringen van de bezoekerservaring."
+        }
+    },
+    "_commentEvents": "Types of events section",
+    "homeEvents": {
+        "nameOne": "Carnaval",
+        "nameTwo": "Religieuze processies",
+        "nameThree": "Thema-parades",
+        "nameFour": "Heiligenfeest",
+        "nameFive": "Beurzen en tentoonstellingen",
+        "nameSix": "Zakelijke evenementen",
+        "nameSeven": "Decors voor film of tv",
+        "nameEight": "Culturele festivals",
+        "nameNine": "Standen voor handelsbeurzen",
+        "nameTen": "Folkloristische clubs en bijeenkomsten",
+        "nameEleven": "Privé themafeesten",
+        "nameTwelve": "Gemeentelijke of overheidsgebeurtenissen",
+        "nameThirteen": "Theatrale voorstellingen"
+    },
+    "_commentShowcase": "Showcase section",
+    "homeShowcase": {
+        "title": "Werken gedaan",
+        "description": "Ontdek ons ​​werk op het gebied van landschappen, praalwagens en decoratie. Ideeën tot leven gebracht door ontwerp, techniek en passie."
+    },
+    "_commentFaqs": "Faqs section",
+    "homeFaqs": {
+        "title": "Veelgestelde vragen",
+        "description": "In deze rubriek vindt u antwoorden op de meestgestelde vragen over onze producten en diensten.",
+        "questionOne": "Werken jullie op maat, gebaseerd op het idee of concept van een klant?",
+        "answerOne": "Ja, al onze projecten zijn maatwerk. We werken nauw samen met de klant om hun ideeën om te zetten in unieke en functionele ontwerpen.",
+        "questionTwo": "Hoe verloopt het werkproces van het eerste contact tot de uiteindelijke oplevering?",
+        "answerTwo": "We beginnen met een gesprek om uw wensen te begrijpen. Vervolgens ontwikkelen we een visueel en technisch voorstel en na goedkeuring gaan we over tot productie en montage.",
+        "questionThree": "Hoe lang van tevoren moet ik mijn bestelling plaatsen?",
+        "answerThree": "Neem in geval van nood contact met ons op en we nemen contact met u op. We raden u aan om minimaal 1 tot 3 maanden van tevoren contact met ons op te nemen, afhankelijk van de omvang van het project.",
+        "questionFour": "Bieden jullie vervoer en opbouw aan voor decors of praalwagens?",
+        "answerFour": "Ja, wij bieden een volledige service, inclusief vervoer en opbouw op de locatie van het evenement of optreden.",
+        "questionFive": "Voert u landelijk werk uit?",
+        "answerFive": "Wij voeren nationaal en internationaal werk uit.",
+        "questionSix": "Hoe vraag ik een offerte aan?",
+        "answerSix": "U kunt contact met ons opnemen via het formulier op onze website, per e-mail of telefonisch. Vertel ons uw idee, data en locatie van het evenement en wij sturen u een voorstel op maat."
+    },
+    "_commentContact": "contact section home",
+    "homeContact": {
+        "titleOne": "Neem contact met ons op",
+        "descriptionOne": "Heeft u een idee? Wilt u een offerte aanvragen of een consult? Schrijf ons en we helpen u graag bij het vormgeven van uw project. We staan ​​voor u klaar.",
+        "email": "E-mail:",
+        "phone": "",
+        "titleTwo": "Schrijf ons",
+        "descriptionTwo": "U kunt dit formulier ook gebruiken om contact met ons op te nemen en ons te vertellen over uw idee of het product/de dienst die u nodig heeft.",
+        "formName": "Voer uw naam in:",
+        "formEmail": "Voer uw e-mailadres in:",
+        "formCompany": "Bedrijfsnaam:",
+        "formEvent": "Soort evenement: Bijvoorbeeld: carnaval, beschermheiligenfeest, audiovisuele productie, productlancering, bruiloft, etc.",
+        "formDescription": "Omschrijving van het project of idee:",
+        "formCta": "versturen"
+    },
+    "_commentFooter": "Footer section",
+    "footer": {
+        "phrase": "Wij houden ervan dingen te creëren die de aandacht trekken en elke ruimte tot leven brengen.",
+        "creatorOne": "Gemaakt",
+        "creatorTwo": "door",
+        "colOneTitle": "diensten",
+        "colTwoTitle": "diensten"
+    },
+    "_commentServicesHero": "Hero - service pages",
+    "servicesHero": {
+        "phrase": "Vakkundig vervaardigd"
+    },
+    "_commentServicesAiMade": "AiMade - service pages",
+    "servicesAiMade": {
+        "title": "Uitgevoerde projecten",
+        "description": "Een kleine selectie van onze eerdere werken op nationale en internationale evenementen met uitzonderlijke afwerkingen."
+    },
+    "_commentServicesFeatures": "Features - service pages",
+    "servicesFeatures": {
+        "title": "Voordelen van werken met Kraken Studio Art",
+        "colOneTitle": "100% maatwerk",
+        "colOneDescription": "Elk project wordt op maat gemaakt, afgestemd op jouw idee, thema, budget en doelstellingen. Niets is generiek",
+        "colTwoTitle": "Ruime ervaring met alle soorten evenementen",
+        "colTwoDescription": "Carnavals, processies, beurzen, film, theater, productlanceringen, feesten... wij begrijpen de timing, behoeften en dynamiek van elk format.",
+        "colThreeTitle": "Tijdige levering en professioneel management",
+        "colThreeDescription": "Wij respecteren de productietijd en montagetijden. We coördineren elke projectfase met ernst en verantwoordelijkheid."
+    }
+
+}

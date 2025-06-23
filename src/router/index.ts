@@ -1,88 +1,75 @@
+// src/router/index.ts
 import { createRouter, createWebHistory } from "vue-router";
-import { type IStaticMethods } from "preline/preline";
 import { allRoutes } from "@/router/routes";
-import { appTitle } from "@/helpers";
+import { appTitle,getAppTitle,getAppDescription } from "@/helpers";
 import { useAuthStore } from "@/stores/auth";
+import i18n, { SUPPORT_LOCALES } from "@/i18n";
 
-declare global {
-    interface Window {
-        HSStaticMethods: IStaticMethods;
-    }
-}
+const DEFAULT_LOCALE = "en";
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes: allRoutes,
-    scrollBehavior(to, from, savedPosition) {
-        if (savedPosition) {
-            return { top: 0 }
-        }
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: allRoutes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return { top: 0 };
 
-        if (to.hash) {
-            return new Promise((resolve) => {
-                setTimeout(() => {
-                    const element = document.querySelector(to.hash);
-                    if (element) {
-                        const yOffset = -60; // Ajusta este valor según la altura de tu header
-                        const y =
-                            element.getBoundingClientRect().top +
-                            window.pageYOffset +
-                            yOffset;
-                        window.scrollTo({ top: y, behavior: "smooth" });
-                    }
-                    resolve();
-                }, 300); // Espera un poco por si aún no se ha renderizado el DOM
-            });
-        }
-
-        return { left: 0, top: 0 };
-    },
-});
-
-// set page title
-router.beforeEach((to, from, next) => {
-    const metaTitle = to.meta.title;
-    const metaDescription = to.meta.description;
-
-    if (metaTitle) {
-        document.title = metaTitle;
-    } else {
-        document.title = appTitle;
-    }
-
-    const descriptionTag = document.querySelector("meta[name='description']");
-    if (descriptionTag && metaDescription) {
-        descriptionTag.setAttribute("content", metaDescription);
-    }
-
-    next();
-});
-
-// preline
-router.afterEach((to, from, failure) => {
-    if (!failure) {
+    if (to.hash) {
+      return new Promise((resolve) => {
         setTimeout(() => {
-            window.HSStaticMethods.autoInit();
-        }, 100);
+          const element = document.querySelector(to.hash);
+          if (element) {
+            const yOffset = -60;
+            const y =
+              element.getBoundingClientRect().top +
+              window.pageYOffset +
+              yOffset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }
+          resolve();
+        }, 300);
+      });
     }
+
+    return { left: 0, top: 0 };
+  },
 });
 
-// auth (remove or comment below code if authentication is not needed)
+// ✅ Un solo beforeEach para i18n + auth + meta
 router.beforeEach((to, from, next) => {
-    const requiresAuth = to.matched.some((route) => route.meta.requiresAuth);
+  // Idioma
+  const localeParam = to.params.locale as string | undefined;
+  const locale = SUPPORT_LOCALES.includes(localeParam) ? localeParam : DEFAULT_LOCALE;
+  i18n.global.locale.value = locale;
 
-    if (!requiresAuth) return next();
+  // Meta tags
+  document.title = to.meta.title ? i18n.global.t(to.meta.title) : getAppTitle();
 
-    const useAuth = useAuthStore();
-    if (useAuth.isAuthenticated()) {
-        return next();
-    }
+  const descriptionTag = document.querySelector("meta[name='description']");
+  if (descriptionTag) {
+    const metaDescription = to.meta.description
+      ? i18n.global.t(to.meta.description)
+      : getAppDescription();
 
-    redirectToLogin();
+    descriptionTag.setAttribute("content", metaDescription);
+  }
 
-    function redirectToLogin() {
-        next({ name: "auth.sign-in", query: { redirectedFrom: to.fullPath } });
-    }
+  // Auth
+  const requiresAuth = to.matched.some((route) => route.meta?.requiresAuth);
+  if (!requiresAuth) return next();
+
+  const useAuth = useAuthStore();
+  if (useAuth.isAuthenticated()) return next();
+
+  next({ name: "auth.sign-in", query: { redirectedFrom: to.fullPath } });
+});
+
+// Preline init
+router.afterEach((to, from, failure) => {
+  if (!failure) {
+    setTimeout(() => {
+      window.HSStaticMethods?.autoInit();
+    }, 100);
+  }
 });
 
 export default router;

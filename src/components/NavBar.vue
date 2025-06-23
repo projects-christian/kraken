@@ -1,7 +1,7 @@
 <template>
-    <header class="navbar" :class="navClass">
+    <header class="navbar overflow-visible">
         <div class="container">
-            <nav>
+            <nav class="relative z-50 overflow-visible">
                 <LogoBox />
 
                 <div class="lg:hidden flex items-center ms-auto px-2.5">
@@ -27,14 +27,22 @@
                             class="nav-item"
                             :class="{ active: activeSectionIndex === idx }"
                         >
-                            <router-link
-                                :to="
-                                    link.route.url ? link.route.url : link.route
-                                "
-                                class="nav-link"
-                            >
-                                {{ link.label }}
-                            </router-link>
+                            <template v-if="link.route.name">
+                                <router-link
+                                    :to="localizedRoute(link.route.name)"
+                                    class="nav-link"
+                                >
+                                    {{ link.label }}
+                                </router-link>
+                            </template>
+                            <template v-else-if="link.route.path">
+                                <a
+                                    :href="link.route.path"
+                                    class="nav-link"
+                                >
+                                    {{ link.label }}
+                                </a>
+                            </template>
                         </li>
                     </ul>
 
@@ -42,29 +50,36 @@
                         class="lg:hidden flex items-center pt-4 mt-4 lg:pt-0 lg:mt-0 border-t border-white/10 lg:border-none"
                     >
                         <!-- <a href="#"
-               class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-3">
-              <ArrowBigDownDash class="h-5 w-5 me-2"/>
-              Download</a> -->
+                        class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-3">
+                        <ArrowBigDownDash class="h-5 w-5 me-2"/>
+                        Download</a> -->
                     </div>
                 </div>
 
                 <div class="hidden lg:flex items-center">
                     <!-- <a href="#demo"
-             class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">
-            <ArrowBigDownDash class="h-5 w-5 me-2"/>
-            Download </a> -->
+                    class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">
+                    <ArrowBigDownDash class="h-5 w-5 me-2"/>
+                    Download </a> -->
                 </div>
+                <SelectLanguage />
             </nav>
         </div>
     </header>
 </template>
 
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
 import { onMounted, onUnmounted, type PropType, ref } from "vue";
 import type { NavBarLinkType } from "@/types/layout";
 import LogoBox from "@/components/LogoBox.vue";
+import SelectLanguage from "@/components/SelectLanguage.vue";
+
 
 import { ArrowBigDownDash, Menu } from "lucide-vue-next";
+import { useLocalizedRoute } from '@/helpers/useLocalizedRoute'
+
+const { localizedRoute } = useLocalizedRoute()
 
 const props = defineProps({
     navLinks: {

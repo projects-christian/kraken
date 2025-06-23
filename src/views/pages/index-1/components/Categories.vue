@@ -4,12 +4,10 @@
             <div class="flex flex-wrap items-center justify-between mb-10">
                 <div>
                     <h2 class="text-4xl font-medium capitalize text-white mb-2">
-                        Servicios
+                        {{ t("homeServices.title") }}
                     </h2>
                     <p class="text-sm text-default-200 font-medium">
-                        Maximizamos el impacto visual, asegurando cada detalle
-                        <br />
-                        Creando una atmosfera magica, vibrante y memorable.
+                        {{ t("homeServices.description") }}
                     </p>
                 </div>
                 <!-- <a
@@ -32,7 +30,11 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
+import { generateCategories } from "@/data/data";
 import CategoryCard from "@/views/pages/index-1/components/CategoryCard.vue";
-import { categories } from "@/data/data";
 import { MoveRight } from "lucide-vue-next";
+
+const { t } = useI18n();
+const categories = generateCategories(t);
 </script>

@@ -1,3 +1,5 @@
+import { useI18n } from 'vue-i18n';
+
 import type { FooterItemType } from "@/types/layout";
 import type {
     BlogType,
@@ -79,201 +81,197 @@ import avatar11 from "@/assets/images/avatars/img-11.png";
 import blog1 from "@/assets/images/nft/bg/1.png";
 import blog2 from "@/assets/images/nft/bg/2.png";
 
-export const categories: CategoryType[] = [
-    {
-        image: carrozas,
-        name: "Carrozas",
-        slug: "carrozas",
-        meta: {
-            title: "carrozas",
-            description: "Diseño de carrozas nauticas y terrestres, con materiales ligeros y resistentes."
-        },
-        creator: {
+//replacing function categories for generateCategories and categories is called in each component, this is to allow using t('categories.floats.meta.title')
+export function generateCategories(t: (key: string) => string): CategoryType[] {
+    return [
+        {
             image: carrozas,
-            username: "@Nikom",
+            name: t('categories.floats.name'),
+            slug: "floats",
+            meta: {
+                title: t('categories.floats.meta.title'),
+                description: t('categories.floats.meta.description'),
+            },
+            creator: {
+                image: carrozas,
+                username: "@Nikom",
+            },
+            intro: t('categories.floats.intro'),
+            description: t('categories.floats.description'),
+            imagesShowcase1: [carroza1, carroza2, carroza3, carroza5, carroza4, carroza6, carroza7],
+            imagesShowcase2: [carroza7, carroza6, carroza5, carroza3, carroza4, carroza2, carroza1],
+            bid: {
+                current: 20.5,
+                last: 25.04,
+            },
+            sale: {
+                endDate: addOrSubtractDaysFromDate(10, true),
+            },
+            isLiked: true,
         },
-        intro:
-            "Diseño de carrozas nauticas y terrestres, con materiales ligeros y resistentes.",
-        description: "<b>Carrozas terrestres - acuáticas</b>: diseñamos todo tipo de carroza con la dinámica que quieras exponer o crear basándonos en el tema o ferias designadas.",
-        imagesShowcase1: [carroza1, carroza2, carroza3, carroza5, carroza4, carroza6, carroza7],
-        imagesShowcase2: [carroza7, carroza6, carroza5, carroza3, carroza4, carroza2, carroza1],
-        bid: {
-            current: 20.5,
-            last: 25.04,
-        },
-        sale: {
-            endDate: addOrSubtractDaysFromDate(10, true),
-        },
-        isLiked: true,
-    },
-    {
-        image: piezasArtisticas,
-        name: "Piezas artisticas",
-        slug: "piezas-artisticas",
-        meta: {
-            title: "Piezas artisticas",
-            description: "Creación de piezas y figuras que decoran  el entorno del evento."
-        },
-        creator: {
+        {
             image: piezasArtisticas,
-            username: "@Mexi",
+            name: t('categories.artisticPieces.name'),
+            slug: "artistic-pieces",
+            meta: {
+                title: t('categories.artisticPieces.meta.title'),
+                description: t('categories.artisticPieces.meta.description'),
+            },
+            creator: {
+                image: piezasArtisticas,
+                username: "@Mexi",
+            },
+            intro: t('categories.artisticPieces.intro'),
+            description: t('categories.artisticPieces.description'),
+            imagesShowcase1: [artisticPieces1, artisticPieces2, artisticPieces3, artisticPieces4, artisticPieces5, artisticPieces6],
+            imagesShowcase2: [artisticPieces6, artisticPieces5, artisticPieces4, artisticPieces3, artisticPieces2, artisticPieces1],
+            bid: {
+                current: 12.5,
+                last: 25.04,
+            },
+            isLiked: true,
         },
-        intro:
-            "Creación de piezas y figuras que decoran  el entorno del evento.",
-        description: "Creación de piezas artísticas que decoran el entorno del evento, como columnas decorativas, figuras monumentales,esculturas o estructuras modulares que sigan la misma línea estética.",
-        imagesShowcase1: [artisticPieces1, artisticPieces2, artisticPieces3, artisticPieces4, artisticPieces5, artisticPieces6],
-        imagesShowcase2: [artisticPieces6, artisticPieces5, artisticPieces4, artisticPieces3, artisticPieces2, artisticPieces1],
-        bid: {
-            current: 12.5,
-            last: 25.04,
-        },
-        isLiked: true,
-    },
-    {
-        image: esculturas,
-        name: "Esculturas y Macroesculturas",
-        slug: "esculturas-y-macroesculturas",
-        meta: {
-            title: "Esculturas y Macroesculturas",
-            description: "Esculturas a gran escala con acabados de calidad y durabilidad."
-        },
-        creator: {
+        {
             image: esculturas,
-            username: "@Astro",
+            name: t('categories.sculpturesAndMacrosculptures.name'),
+            slug: "sculptures-and-macrosculptures",
+            meta: {
+                title: t('categories.sculpturesAndMacrosculptures.meta.title'),
+                description: t('categories.sculpturesAndMacrosculptures.meta.description'),
+            },
+            creator: {
+                image: esculturas,
+                username: "@Astro",
+            },
+            intro: t('categories.sculpturesAndMacrosculptures.intro'),
+            description: t('categories.sculpturesAndMacrosculptures.description'),
+            imagesShowcase1: [],
+            imagesShowcase2: [],
+            bid: {
+                current: 14.8,
+                last: 12.04,
+            },
+            isLiked: true,
         },
-        intro:
-            "Esculturas a gran escala con acabados de calidad y durabilidad.",
-        description: "Creación de macro o micro esculturas únicas que puedan instalarse en puntos clave del evento, como entradas o zonas de alto tráfico fabricadas en cualquier tipo de material.",
-        imagesShowcase1: [],
-        imagesShowcase2: [],
-        bid: {
-            current: 14.8,
-            last: 12.04,
-        },
-        isLiked: true,
-    },
-    {
-        image: setDeRodaje,
-        name: "Sets de rodaje para cine y TV",
-        slug: "sets-de-rodaje-para-cine-y-tv",
-        meta: {
-            title: "Sets de rodaje para cine y TV",
-            description: "Transformamos espacios existentes en los escenarios requeridos por el guion."
-        },
-        creator: {
+        {
             image: setDeRodaje,
-            username: "@Aliza",
+            name: t('categories.filmAndTvSets.name'),
+            slug: "film-and-tv-sets",
+            meta: {
+                title: t('categories.filmAndTvSets.meta.title'),
+                description: t('categories.filmAndTvSets.meta.description'),
+            },
+            creator: {
+                image: setDeRodaje,
+                username: "@Aliza",
+            },
+            intro: t('categories.filmAndTvSets.intro'),
+            description: t('categories.filmAndTvSets.description'),
+            imagesShowcase1: [],
+            imagesShowcase2: [],
+            bid: {
+                current: 18,
+                last: 32.06,
+            },
+            sale: {
+                endDate: addOrSubtractDaysFromDate(4, true),
+            },
+            isLiked: true,
         },
-        intro:
-            "Transformamos espacios existentes en los escenarios requeridos por el guion.",
-        description: "Ofrecemos una amplia gama de sets de cine diseñados y construidos a medida para dar vida a tus ideas más ambiciosas. Desde recreaciones históricas detalladas hasta futuristas paisajes urbanos o acogedores interiores requeridos basados en el guión ",
-        imagesShowcase1: [],
-        imagesShowcase2: [],
-        bid: {
-            current: 18,
-            last: 32.06,
-        },
-        sale: {
-            endDate: addOrSubtractDaysFromDate(4, true),
-        },
-        isLiked: true,
-    },
-    {
-        image: estatuillas,
-        name: "Estatuillas para premios",
-        slug: "estatuillas-para-premios",
-        meta: {
-            title: "Estatuillas para premios",
-            description: "Diseños unicos y exclusivos para que cada una sea un objeto de colección."
-        },
-        creator: {
+        {
             image: estatuillas,
-            username: "@Tony",
+            name: t('categories.StatuettesForAwards.name'),
+            slug: "statuettes-for-awards",
+            meta: {
+                title: t('categories.StatuettesForAwards.meta.title'),
+                description: t('categories.StatuettesForAwards.meta.description'),
+            },
+            creator: {
+                image: estatuillas,
+                username: "@Tony",
+            },
+            intro: t('categories.StatuettesForAwards.intro'),
+            description: t('categories.StatuettesForAwards.description'),
+            imagesShowcase1: [],
+            imagesShowcase2: [],
+            bid: {
+                current: 20.42,
+                last: 18.96,
+            },
+            isLiked: true,
         },
-        intro:
-            "Diseños unicos y exclusivos para que cada una sea un objeto de colección.",
-        description: "Creación de estatuillas exclusivas para los premios con diseños únicos y personalizados,fabricados en cualquier tipo de material.",
-        imagesShowcase1: [],
-        imagesShowcase2: [],
-        bid: {
-            current: 20.42,
-            last: 18.96,
-        },
-        isLiked: true,
-    },
-    {
-        image: ambientacion,
-        name: "Ambientación de lugar",
-        slug: "ambientacion-de-lugar",
-        meta: {
-            title: "Ambientación de lugar",
-            description: "Creamos ambientaciones temáticas para eventos especiales, lanzamientos de productos, celebraciones y más."
-        },
-        creator: {
+        {
             image: ambientacion,
-            username: "@Alabto",
+            name: t('categories.venueTheming.name'),
+            slug: "venue-theming",
+            meta: {
+                title: t('categories.venueTheming.meta.title'),
+                description: t('categories.venueTheming.meta.description'),
+            },
+            creator: {
+                image: ambientacion,
+                username: "@Alabto",
+            },
+            intro: t('categories.venueTheming.intro'),
+            description: t('categories.venueTheming.description'),
+            imagesShowcase1: [ambientacion1, ambientacion2, ambientacion3, ambientacion4, ambientacion1],
+            imagesShowcase2: [ambientacion4, ambientacion3, ambientacion2, ambientacion1, ambientacion4],
+            bid: {
+                current: 24.96,
+                last: 40.22,
+            },
+            isLiked: true,
         },
-        intro:
-            "Creamos ambientaciones temáticas para eventos especiales, lanzamientos de productos, celebraciones y más.",
-        description: "Ofrecemos un servicio integral de ambientación para una amplia variedad de lugares: desde eventos corporativos y celebraciones sociales hasta espacios comerciales, hoteles, restaurantes y hogares. Nuestro equipo de diseñadores y creativos se sumerge en tu visión, comprendiendo la esencia de tu marca o tus deseos personales para desarrollar una propuesta a medida.",
-        imagesShowcase1: [ambientacion1, ambientacion2, ambientacion3, ambientacion4, ambientacion1],
-        imagesShowcase2: [ambientacion4, ambientacion3, ambientacion2, ambientacion1, ambientacion4],
-        bid: {
-            current: 24.96,
-            last: 40.22,
-        },
-        isLiked: true,
-    },
-    {
-        image: disfraces,
-        name: "Creación de disfraces",
-        slug: "creacion-de-disfraces",
-        meta: {
-            title: "Creación de disfraces",
-            description: "Elaborados y detallados con alta calidad acorde a la tematica del evento."
-        },
-        creator: {
+        {
             image: disfraces,
-            username: "@Minato",
+            name: t('categories.creatingCostumes.name'),
+            slug: "creating-costumes",
+            meta: {
+                title: t('categories.creatingCostumes.meta.title'),
+                description: t('categories.creatingCostumes.meta.description'),
+            },
+            creator: {
+                image: disfraces,
+                username: "@Minato",
+            },
+            intro: t('categories.creatingCostumes.intro'),
+            description: t('categories.creatingCostumes.description'),
+            imagesShowcase1: [],
+            imagesShowcase2: [],
+            bid: {
+                current: 12.5,
+                last: 25.04,
+            },
+            sale: {
+                endDate: addOrSubtractDaysFromDate(7, true),
+            },
+            isLiked: true,
         },
-        intro:
-            "Elaborados y detallados con alta calidad acorde a la tematica del evento.",
-        description: "Diseño de disfraces elaborados y detallados de todo tipo de material para los participantes, acorde con la temática del evento (marítima, histórica, fantástica, etc).",
-        imagesShowcase1: [],
-        imagesShowcase2: [],
-        bid: {
-            current: 12.5,
-            last: 25.04,
-        },
-        sale: {
-            endDate: addOrSubtractDaysFromDate(7, true),
-        },
-        isLiked: true,
-    },
-    {
-        image: parquesTematicos,
-        name: "Parques temáticos",
-        slug: "parques-tematicos",
-        meta: {
-            title: "Parques temáticos",
-            description: "Implica la transformación de espacios en mundos fantásticos."
-        },
-        creator: {
+        {
             image: parquesTematicos,
-            username: "@Tamari",
+            name: t('categories.themeParks.name'),
+            slug: "theme-parks",
+            meta: {
+                title: t('categories.themeParks.meta.title'),
+                description: t('categories.themeParks.meta.description'),
+            },
+            creator: {
+                image: parquesTematicos,
+                username: "@Tamari",
+            },
+            intro: t('categories.themeParks.intro'),
+            description: t('categories.themeParks.description'),
+            imagesShowcase1: [],
+            imagesShowcase2: [],
+            bid: {
+                current: 42.52,
+                last: 20.42,
+            },
+            isLiked: true,
         },
-        intro:
-            "Implica la transformación de espacios en mundos fantásticos.",
-        description: "Somos expertos en revitalizar y transformar parques temáticos, convirtiendo atracciones anticuadas en experiencias inolvidables,Ofrecemos soluciones integrales, desde el rediseño de atracciones existentes y la conceptualización de nuevas áreas temáticas, hasta la implementación de tecnologías de vanguardia y mejoras en la experiencia del cliente.",
-        imagesShowcase1: [],
-        imagesShowcase2: [],
-        bid: {
-            current: 42.52,
-            last: 20.42,
-        },
-        isLiked: true,
-    },
-];
+    ];
+}
+
 
 export const topSellers: SellerType[] = [
     {
@@ -329,34 +327,34 @@ export const browseByCategory = [
     },
 ];
 
-export const faqs: FAQType[] = [
-    {
-        question: "¿Trabajan a medida según una idea o concepto del cliente?",
-        answer: "Sí, todos nuestros proyectos son personalizados. Trabajamos en conjunto con el cliente para transformar sus ideas en diseños únicos y funcionales.",
-    },
-    {
-        question:
-            "¿Cuál es el proceso de trabajo desde el primer contacto hasta la entrega final?",
-        answer: "Comenzamos con una reunión para entender tu necesidad, luego desarrollamos una propuesta visual y técnica, y tras su aprobación, pasamos a la producción y montaje.",
-    },
-    {
-        question: "¿Con cuánta anticipación debo hacer mi pedido?",
-        answer: "En caso de emergencia contactanos y te damos una respuesta, recomendamos contactarnos al menos con 1 a 3 meses de anticipación, dependiendo de la magnitud del proyecto.",
-    },
-    {
-        question:
-            "¿Ofrecen transporte e instalación de las escenografías o carrozas?",
-        answer: "Sí, ofrecemos servicio completo, que incluye transporte, montaje en el lugar del evento o presentación.",
-    },
-    {
-        question: "¿Realizan trabajos en todo el país?",
-        answer: "Realizamos trabajos a nivel nacional e internacional.",
-    },
-    {
-        question: "¿Cómo solicito un presupuesto?",
-        answer: "Puedes contactarnos a través del formulario en nuestra web, por correo electrónico o teléfono. Cuéntanos tu idea, fechas y lugar del evento, y te enviaremos una propuesta a medida.",
-    },
-];
+export function generateFaqs(t: (key: string) => string): FAQType[] {
+    return [
+        {
+            question: t('homeFaqs.questionOne'),
+            answer: t('homeFaqs.answerOne')
+        },
+        {
+            question: t('homeFaqs.questionTwo'),
+            answer: t('homeFaqs.answerTwo')
+        },
+        {
+            question: t('homeFaqs.questionThree'),
+            answer: t('homeFaqs.answerThree')
+        },
+        {
+            question: t('homeFaqs.questionFour'),
+            answer: t('homeFaqs.answerFour')
+        },
+        {
+            question: t('homeFaqs.questionFive'),
+            answer: t('homeFaqs.answerFive')
+        },
+        {
+            question: t('homeFaqs.questionSix'),
+            answer: t('homeFaqs.answerSix')
+        },
+    ];
+}
 
 export const blogs: BlogType[] = [
     {
@@ -375,96 +373,99 @@ export const blogs: BlogType[] = [
     },
 ];
 
-export const footerItems: FooterItemType[] = [
-    {
-        title: "Servicios",
-        links: [
-            {
-                label: "Carrozas",
-                route: {
-                    url: "/servicios/carrozas"
+export function generateFooterItems(t: (key: string) => string): FooterItemType[] {
+    return [
+        {
+            title: t('footer.colOneTitle'),
+            links: [
+                {
+                    label: t('categories.floats.name'),
+                    route: {
+                        url: "/servicios/carrozas"
+                    },
                 },
-            },
-            {
-                label: "Piezas artisticas",
-                route: {
-                    url: "/servicios/piezas-artisticas"
+                {
+                    label: t('categories.artisticPieces.name'),
+                    route: {
+                        url: "/servicios/piezas-artisticas"
+                    },
                 },
-            },
-            {
-                label: "Esculturas y Macroesculturas",
-                route: {
-                    url: "servicios/esculturas-y-macroesculturas"
+                {
+                    label: t('categories.sculpturesAndMacrosculptures.name'),
+                    route: {
+                        url: "servicios/esculturas-y-macroesculturas"
+                    },
                 },
-            },
-            {
-                label: "Sets de rodaje para cine y TV",
-                route: {
-                    url: "/servicios/sets-de-rodaje-para-cine-y-tv"
+                {
+                    label: t('categories.filmAndTvSets.name'),
+                    route: {
+                        url: "/servicios/sets-de-rodaje-para-cine-y-tv"
+                    },
                 },
-            },
-        ],
-    },
-    {
-        title: "Servicios",
-        links: [
-            {
-                label: "Estatuillas para premios",
-                route: {
-                    url: "/servicios/estatuillas-para-premios"
+            ],
+        },
+        {
+            title: t('footer.colTwoTitle'),
+            links: [
+                {
+                    label: t('categories.StatuettesForAwards.name'),
+                    route: {
+                        url: "/servicios/estatuillas-para-premios"
+                    },
                 },
-            },
-            {
-                label: "Ambientación de lugar",
-                route: {
-                    url: "/servicios/ambientacion-de-lugar"
+                {
+                    label: t('categories.venueTheming.name'),
+                    route: {
+                        url: "/servicios/ambientacion-de-lugar"
+                    },
                 },
-            },
-            {
-                label: "Creación de disfraces",
-                route: {
-                    url: "/servicios/creacion-de-disfraces"
+                {
+                    label: t('categories.creatingCostumes.name'),
+                    route: {
+                        url: "/servicios/creacion-de-disfraces"
+                    },
                 },
-            },
-            {
-                label: "Parques temáticos",
-                route: {
-                    url: "/servicios/parques-tematicos"
+                {
+                    label: t('categories.themeParks.name'),
+                    route: {
+                        url: "/servicios/parques-tematicos"
+                    },
                 },
-            },
-        ],
-    },
-    // {
-    //     title: "Recursos",
-    //     links: [
-    //         {
-    //             label: "",
-    //             route: {},
-    //         },
-    //         {
-    //             label: "",
-    //             route: {},
-    //         },
-    //         {
-    //             label: "",
-    //             route: {},
-    //         },
-    //     ],
-    // },
-    // {
-    //     title: "Compañia",
-    //     links: [
-    //         {
-    //             label: "",
-    //             route: {},
-    //         },
-    //         {
-    //             label: "",
-    //             route: {},
-    //         },
-    //     ],
-    // },
-];
+            ],
+        },
+        // {
+        //     title: "Recursos",
+        //     links: [
+        //         {
+        //             label: "",
+        //             route: {},
+        //         },
+        //         {
+        //             label: "",
+        //             route: {},
+        //         },
+        //         {
+        //             label: "",
+        //             route: {},
+        //         },
+        //     ],
+        // },
+        // {
+        //     title: "Compañia",
+        //     links: [
+        //         {
+        //             label: "",
+        //             route: {},
+        //         },
+        //         {
+        //             label: "",
+        //             route: {},
+        //         },
+        //     ],
+        // },
+    
+    ];
+}
 
 // export const services = [
 //     {
@@ -525,25 +526,23 @@ export const footerItems: FooterItemType[] = [
 //     },
 // ];
 
-export const features: FeatureType[] = [
-    {
-        icon: Activity,
-        title: "Diseño 100% personalizado",
-        description:
-            "Cada proyecto se crea a medida, adaptado a tu idea, temática, presupuesto y objetivos. Nada es genérico.",
-    },
-    {
-        icon: Layers,
-        title: "Amplia experiencia en todo tipo de eventos",
-        description:
-            "Carnavales, procesiones, ferias, cine, teatro, lanzamientos, fiestas... conocemos los tiempos, necesidades y dinámicas de cada formato.",
-    },
-    {
-        icon: Dribbble,
-        title: "Entrega puntual y gestión profesional",
-        description:
-            "Respetamos los tiempos de producción y montaje. Coordinamos cada etapa del proyecto con seriedad y responsabilidad.",
-    },
-];
+export function generateFeatures(t: (key: string) => string): FeatureType[] {
+    return [
+        {
+            icon: Activity,
+            title: t('servicesFeatures.colOneTitle'),
+            description: t('servicesFeatures.colOneDescription'),
+        },
+        {
+            icon: Layers,
+            title: t('servicesFeatures.colTwoTitle'),
+            description: t('servicesFeatures.colTwoDescription'),
+        },
+        {
+            icon: Dribbble,
+            title: t('servicesFeatures.colThreeTitle'),
+            description: t('servicesFeatures.colThreeDescription'),
+        },
+    ];
 
-
+}

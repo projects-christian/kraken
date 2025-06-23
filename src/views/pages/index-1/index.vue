@@ -50,28 +50,25 @@
                                 href=""
                                 class="text-xl font-medium text-white duration-500"
                             >
-                                Contáctanos
+                                {{ t("homeContact.titleOne") }}
                             </h3>
                             <p
                                 class="text-default-300 group-hover:text-white/80 duration-500 mt-3 mb-6"
                             >
-                                ¿Tienes una idea en mente? ¿Quieres pedir un
-                                presupuesto o hacer una consulta? Escríbenos y
-                                con gusto te ayudaremos a darle forma a tu
-                                proyecto. Estamos para escucharte.
+                                {{ t("homeContact.descriptionOne") }}
                             </p>
                             <p
                                 class="text-default-300 group-hover:text-white/80 duration-500 mt-2"
                             >
-                                Email:
-                                <b>krakenstudioadm@gmail.com</b>
+                                {{ t("homeContact.phone") }}
+                                <b>contact@krakenstudioart.com</b>
                             </p>
-                            <p
+                            <!-- <p
                                 class="text-default-300 group-hover:text-white/80 duration-500 mt-2"
                             >
                                 WhatsApp:
                                 <b>+573053075869</b>
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -118,15 +115,12 @@
                                 <h3
                                     class="text-xl font-medium text-white duration-500"
                                 >
-                                    Escribenos
+                                    {{ t("homeContact.titleTwo") }}
                                 </h3>
                                 <p
                                     class="text-default-300 group-hover:text-white/80 duration-500 mt-3 mb-6"
                                 >
-                                    Tambien puedes usar este formulario para
-                                    ponerte en contacto con nosotros
-                                    comentandonos la idea que tienes en mente o
-                                    el producto/servicio que necesites.
+                                    {{ t("homeContact.descriptionTwo") }}
                                 </p>
                                 <form
                                     class="space-y-2 mb-6"
@@ -139,7 +133,7 @@
                                             type="text"
                                             id="name"
                                             class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                            placeholder="Ingresa tu nombre:"
+                                            :placeholder="t('homeContact.formName')"
                                             name="name"
                                         />
                                     </div>
@@ -148,7 +142,7 @@
                                             type="email"
                                             id="subcribe"
                                             class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                            placeholder="Ingresa tu Email:"
+                                            :placeholder="t('homeContact.formEmail')"
                                             name="email"
                                         />
                                     </div>
@@ -157,7 +151,7 @@
                                             type="text"
                                             id="company"
                                             class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                            placeholder="Nombre de empresa:"
+                                            :placeholder="t('homeContact.formCompany')"
                                             name="company"
                                         />
                                     </div>
@@ -166,7 +160,7 @@
                                             type="text"
                                             id="event"
                                             class="py-4 ps-4 pe-40 w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                            placeholder="Tipo de evento: Ejemplo: Carnaval, Fiesta patronal, Producción audiovisual, Lanzamiento de producto, Boda, etc."
+                                            :placeholder="t('homeContact.formEvent')"
                                             name="event"
                                         />
                                     </div>
@@ -177,7 +171,7 @@
                                             cols="30"
                                             rows="10"
                                             class="py-4 ps-4 pe-40 w-full h-20 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                            placeholder="Descripción del proyecto o idea:"
+                                            :placeholder="t('homeContact.formDescription')"
                                         ></textarea>
                                     </div>
                                     <div class="relative">
@@ -185,7 +179,7 @@
                                             type="submit"
                                             class="inline-flex items-center justify-center gap-2 px-6 absolute top-[6px] end-[6px] h-9 transition-all bg-primary hover:bg-primary-hover border-primary hover:border-primary-hover text-white rounded-md"
                                         >
-                                            Enviar
+                                            {{ t("homeContact.formCta") }}
                                             <MoveRight class="h-4 w-4" />
                                         </button>
                                     </div>
@@ -226,24 +220,32 @@ import Footer from "@/views/pages/index-1/components/Footer.vue";
 import Background2 from "@/components/Background2.vue";
 import BackToTop from "@/components/BackToTop.vue";
 
-import { Diamond, Wallet, Shapes } from "lucide-vue-next";
-const email = import.meta.env.VITE_EMAIL;
+import { Diamond, Wallet, Shapes, MoveRight } from "lucide-vue-next";
+import { ref, watch } from "vue";
+import { useI18n } from "vue-i18n";
 
-const navLinks: NavBarLinkType[] = [
+const email = import.meta.env.VITE_EMAIL;
+const { t, locale } = useI18n();
+
+const navLinks = ref<NavBarLinkType[]>([]);
+
+
+function generateNavLinks(): NavBarLinkType[] {
+    return [
     {
         id: "home",
-        label: "Inicio",
-        route: { url: "/" },
+        label: t("navbar.home"),
+        route: { name: "landing" },
     },
     {
         id: "categories",
-        label: "Servicios",
-        route: { url: "#categories" },
+        label: t("navbar.services"),
+        route: { path: "#categories" },
     },
     {
         id: "events",
-        label: "Tipos de eventos",
-        route: { url: "#events" },
+        label: t("navbar.events"),
+        route: { path: "#events" },
     },
     //   {
     //     id: 'sellers',
@@ -252,23 +254,30 @@ const navLinks: NavBarLinkType[] = [
     //   },
     {
         id: "showcase",
-        label: "Exhibición",
-        route: { url: "#showcase" },
+        label: t("navbar.showcase"),
+        route: { path: "#showcase" },
     },
     {
         id: "faq",
-        label: "Faq",
-        route: { url: "#faq" },
+        label: t("navbar.faq"),
+        route: { path: "#faq" },
     },
     {
         id: "contacto",
-        label: "Contáctanos",
-        route: { url: "#contacto" },
+        label: t("navbar.contact"),
+        route: { path: "#contacto" },
     },
     //   {
     //     id: 'blog',
     //     label: 'Blog',
     //     route: {url: '#blog'}
     //   }
-];
+ ];
+}
+
+navLinks.value = generateNavLinks();
+
+watch(locale, () => {
+  navLinks.value = generateNavLinks();
+});
 </script>

@@ -4,12 +4,10 @@
             <div class="flex flex-wrap items-center justify-between mb-10">
                 <div>
                     <h2 class="text-4xl font-medium capitalize text-white mb-2">
-                        Faqs
+                        {{ t("homeFaqs.title") }}
                     </h2>
                     <p class="text-sm text-default-200 font-medium">
-                        En esta sección encontrarás respuestas a las preguntas
-                        más comunes <br />
-                        sobre nuestros productos y servicios.
+                        {{ t("homeFaqs.description") }}
                     </p>
                 </div>
             </div>
@@ -62,5 +60,9 @@
 <script setup lang="ts">
 import { ChevronUp, HelpCircle } from "lucide-vue-next";
 import { chunkArray } from "@/helpers/array";
-import { faqs } from "@/data/data";
+import { generateFaqs } from "@/data/data";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+const faqs = generateFaqs(t);
 </script>

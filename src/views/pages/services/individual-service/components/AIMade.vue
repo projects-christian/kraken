@@ -5,10 +5,10 @@
                 <div>
                     <div class="max-w-2xl mx-auto">
                         <h2 class="text-3xl font-medium text-white mb-4">
-                            Trabajos realizados
+                            {{ t("servicesAiMade.title") }}
                         </h2>
                         <p class="text-lg text-default-200">
-                          Una pequeña muestra de nuestros trabajos previos en eventos nacionales como internacionales con acabados excepcionales.
+                            {{ t("servicesAiMade.description") }}
                         </p>
                     </div>
                 </div>
@@ -97,6 +97,8 @@
 
 <script setup lang="ts">
 import { MoveRight } from "lucide-vue-next";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 defineProps<{
   imagesShowcase1: string[],

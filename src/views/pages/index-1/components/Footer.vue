@@ -10,8 +10,7 @@
                     <p
                         class="text-default-200 text-sm font-medium max-w-xs mt-6"
                     >
-                        Nos encanta crear cosas que llamen la atención y le den
-                        vida a cada espacio.
+                        {{ t("footer.phrase") }}
                     </p>
                     <!-- <h5 class="text-default-200 text-base font-semibold mb-4 mt-6">Follow Us :</h5>
           <ul class="flex flex-wrap items-center gap-1">
@@ -63,11 +62,11 @@
                     {{ currentYear }}
                     © {{ appName }} -
                     <a href="#"
-                        >Elaborado
+                        >{{ t("footer.creatorOne") }}
                         <Heart
                             class="inline h-4 w-4 text-red-500 fill-red-500"
                         />
-                        por
+                        {{ t("footer.creatorTwo") }}
                         {{ appAuthor }}</a
                     >
                 </p>
@@ -83,5 +82,9 @@
 import logo from "@/assets/images/logo-kraken.png";
 import { CircleSlash, Heart } from "lucide-vue-next";
 import { currentYear, appName, appAuthor, socialLinks } from "@/helpers";
-import { footerItems } from "@/data/data";
+import { generateFooterItems } from "@/data/data";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+const footerItems = generateFooterItems(t);
+
 </script>

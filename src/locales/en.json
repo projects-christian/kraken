@@ -1,0 +1,184 @@
+{
+    "_commentMetaMainPage": "Meta main page avery language",
+    "meta": {
+        "app": {
+            "title": "Floats, event decor, sculptures – Kraken Studio Art",
+            "description": "Studio specialized in the creation of floats, scenography, sculptures, TV sets, and artistic environments for cultural events."
+        }
+    },
+    "_commentNavbar": "Navbar section",
+    "navbar": {
+        "home": "Home",
+        "services": "Services",
+        "events": "Types of Events",
+        "showcase": "Showcase",
+        "faq": "FAQ",
+        "contact": "Contact Us"
+    },
+    "_commentHero": "Hero section",
+    "homeHero": {
+        "title": "Scenery, floats and venue theming.",
+        "description": "We are experts in creating whatever you need for all types of events: Carnivals, Religious Processions, Themed Parades, Patron Saint Festivals, Product Launches, Trade Show Stands, etc.",
+        "phrase": "Here you breathe art"
+    },
+    "_commentServices": "Services section",
+    "homeServices": {
+        "title": "Services",
+        "description": "We maximize the visual impact, ensuring every detail is captured, creating a magical, vibrant, and memorable atmosphere."
+    },
+    "_commentCategories": "categories from data.ts file",
+    "categories": {
+        "floats": {
+            "name": "Floats",
+            "meta": {
+                "title": "Floats",
+                "description": "Design of nautical and land floats, using lightweight and durable materials"
+            },
+            "intro": "Design of nautical and land floats, using lightweight and durable materials.",
+            "description": "<b>Terrestrial floats - Aquatic floats</b>: We design all types of floats with the dynamics you want to display or create, based on the designated theme or fairs."
+        },
+        "artisticPieces": {
+            "name": "Artistic pieces",
+            "meta": {
+                "title": "Artistic pieces",
+                "description": "Creation of pieces and figures that decorate the event environment"
+            },
+            "intro": "Creation of pieces and figures that decorate the event environment.",
+            "description": "Creation of artistic pieces that decorate the event's surroundings,such as decorative columns,monumental figures,sculptures or modular structures that follow the same aesthetic line."
+        },
+        "sculpturesAndMacrosculptures": {
+            "name": "Sculptures and Macrosculptures",
+            "meta": {
+                "title": "Sculptures and Macrosculptures",
+                "description": "Large-scale sculptures with quality finishes and durability"
+            },
+            "intro": "Large-scale sculptures with quality finishes and durability.",
+            "description": "Creation of unique macro or micro sculptures that can be installed at key points of the event, such as entrances or high‑traffic areas, made from any type of material."
+        },
+        "filmAndTvSets": {
+            "name": "Film and TV sets",
+            "meta": {
+                "title": "Film and TV sets",
+                "description": "We transform existing spaces into the settings required by the script"
+            },
+            "intro": "We transform existing spaces into the settings required by the script.",
+            "description": "We offer a wide range of custom-designed and built film sets to bring your most ambitious ideas to life. From detailed historical recreations to futuristic urban landscapes or cozy interiors required by the script."
+        },
+        "StatuettesForAwards": {
+            "name": "Statuettes for awards",
+            "meta": {
+                "title": "Statuettes for awards",
+                "description": "Unique and exclusive designs so that each one becomes a collector's item"
+            },
+            "intro": "Unique and exclusive designs so that each one becomes a collector's item.",
+            "description": "Creation of exclusive statues for awards with unique and customized designs, crafted from any type of material."
+        },
+        "venueTheming": {
+            "name": "Venue theming",
+            "meta": {
+                "title": "Venue theming",
+                "description": "We create themed environments for special events, product launches, celebrations, and more"
+            },
+            "intro": "We create themed environments for special events, product launches, celebrations, and more.",
+            "description": "We offer a comprehensive venue styling service for a wide range of locations: from corporate events and social celebrations to commercial spaces, hotels, restaurants, and homes. Our team of designers and creatives immerses themselves in your vision, understanding the essence of your brand or personal desires to develop a tailored proposal."
+        },
+        "creatingCostumes": {
+            "name": "Creating costumes",
+            "meta": {
+                "title": "Creating costumes",
+                "description": "Elaborate and detailed with high quality according to the theme of the event"
+            },
+            "intro": "Elaborate and detailed with high quality according to the theme of the event.",
+            "description": "Design of elaborate and detailed costumes from any kind of material for participants, in line with the event theme (nautical, historical, fantasy, etc.)."
+        },
+        "themeParks": {
+            "name": "Theme parks",
+            "meta": {
+                "title": "Theme parks",
+                "description": "It involves the transformation of spaces into fantastic worlds"
+            },
+            "intro": "It involves the transformation of spaces into fantastic worlds.",
+            "description": "We specialize in revitalizing and transforming theme parks, turning outdated attractions into unforgettable experiences. We offer end‑to‑end solutions, from redesigning existing rides and conceptualizing new themed areas to implementing cutting‑edge technologies and enhancing guest experience."
+        }
+    },
+    "_commentEvents": "Types of events section",
+    "homeEvents": {
+        "nameOne": "Carnivals",
+        "nameTwo": "Religious processions",
+        "nameThree": "Themed parades",
+        "nameFour": "Patron saint festivals",
+        "nameFive": "Fairs and exhibitions",
+        "nameSix": "Corporate events",
+        "nameSeven": "Film or TV set designs",
+        "nameEight": "Cultural festivals",
+        "nameNine": "Trade fair booths",
+        "nameTen": "Folklore clubs and gatherings",
+        "nameEleven": "Private theme parties",
+        "nameTwelve": "Municipal or government events",
+        "nameThirteen": "Theatrical performances"
+    },
+    "_commentShowcase": "Showcase section",
+    "homeShowcase": {
+        "title": "Completed projects",
+        "description": "Discover some of our work in scenery, floats, and decor. Ideas brought to life through design, technique, and passion."
+    },
+    "_commentFaqs": "Faqs section",
+    "homeFaqs": {
+        "title": "faqs",
+        "description": "In this section, you'll find answers to the most common questions about our products and services.",
+        "questionOne": "Do you work on a custom basis based on a client's idea or concept?",
+        "answerOne": "Yes, all our projects are customized. We work closely with the client to transform their ideas into unique and functional designs.",
+        "questionTwo": "What is the work process from initial contact to final delivery?",
+        "answerTwo": "We begin with a meeting to understand your needs, then we develop a visual and technical proposal, and after approval, we move on to production and assembly.",
+        "questionThree": "How far in advance should I place my order? ",
+        "answerThree": "In case of an emergency, contact us and we'll get back to you. We recommend contacting us at least 1 to 3 months in advance, depending on the size of the project.",
+        "questionFour": "Do you offer transportation and set-up for stage sets or floats?",
+        "answerFour": "Yes, we offer a full service, including transportation and set-up at the event or performance venue.",
+        "questionFive": "Do you carry out work nationwide?",
+        "answerFive": "We carry out work nationally and internationally.",
+        "questionSix": "How do I request a quote?",
+        "answerSix": "You can contact us through the form on our website, by email, or by phone. Tell us your idea, dates, and location of the event, and we'll send you a customized proposal."
+    },
+    "_commentContact": "contact section home",
+    "homeContact": {
+        "titleOne": "Contact Us",
+        "descriptionOne": "Do you have an idea in mind? Want to request a quote or make a consultation? Write to us and we'll be happy to help you shape your project. We're here to listen.",
+        "email": "Email:",
+        "phone": "",
+        "titleTwo": "Write to us",
+        "descriptionTwo": "You can also use this form to contact us and tell us about your idea or the product/service you need.",
+        "formName": "Enter your name:",
+        "formEmail": "Enter your email:",
+        "formCompany": "Company Name:",
+        "formEvent": "Type of event: Example: Carnival, Patron Saint Festival, Audiovisual Production, Product Launch, Wedding, etc.",
+        "formDescription": "Description of the project or idea:",
+        "formCta": "send"
+    },
+    "_commentFooter": "Footer section",
+    "footer": {
+        "phrase": "We love creating things that attract attention and bring life to every space.",
+        "creatorOne": "Created",
+        "creatorTwo": "by",
+        "colOneTitle": "services",
+        "colTwoTitle": "services"
+    },
+    "_commentServicesHero": "Hero - service pages",
+    "servicesHero": {
+        "phrase": "Expertly Crafted"
+    },
+    "_commentServicesAiMade": "AiMade - service pages",
+    "servicesAiMade": {
+        "title": "Completed works / Past projects",
+        "description": "A small sample of our previous works in national and international events with exceptional finishes."
+    },
+    "_commentServicesFeatures": "Features - service pages",
+    "servicesFeatures": {
+        "title": "Advantages of working with Kraken Studio Art",
+        "colOneTitle": "100% Custom Design",
+        "colOneDescription": "Every project is custom-made, tailored to your idea, theme, budget, and goals. Nothing is generic.",
+        "colTwoTitle": "Extensive experience in all types of events",
+        "colTwoDescription": "Carnivals, processions, fairs, film, theatre, launches, parties... we understand the timing, requirements, and dynamics of each format.",
+        "colThreeTitle": "On-time delivery and professional management",
+        "colThreeDescription": "We respect production and assembly timelines. We coordinate each stage of the project with seriousness and responsibility."
+    }
+}

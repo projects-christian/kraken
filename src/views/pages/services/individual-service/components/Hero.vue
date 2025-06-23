@@ -22,7 +22,7 @@
                             >
                                 <span
                                     class="py-1 px-3 rounded-md text-sm font-medium uppercase tracking-wider text-primary bg-primary/20"
-                                    >Hecho por expertos</span
+                                    >{{ t("servicesHero.phrase") }}</span
                                 >
                                 <h1
                                     class="md:text-5xl/tight text-4xl font-medium text-white max-w-lg my-4"
@@ -67,6 +67,8 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 defineProps({
     name: String,

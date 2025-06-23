@@ -22,7 +22,9 @@
 <script setup lang="ts">
 import { useRoute, useRouter } from "vue-router";
 import { onMounted, computed } from "vue";
-import { categories } from "@/data/data";
+import { useI18n } from "vue-i18n";
+
+import { generateCategories } from "@/data/data";
 
 import type { NavBarLinkType } from "@/types/layout";
 import NavBar from "@/components/NavBar.vue";
@@ -35,6 +37,10 @@ import FAQs from "@/views/pages/index-1/components/FAQs.vue";
 import Footer from "@/views/pages/index-1/components/Footer.vue";
 import Background2 from "@/components/Background2.vue";
 import BackToTop from "@/components/BackToTop.vue";
+
+
+const { t } = useI18n();
+const categories = generateCategories(t);
 
 // Función para convertir slug a clave válida del objeto
 // function normalizeSlug(slug) {
@@ -74,13 +80,13 @@ onMounted(() => {
 const navLinks: NavBarLinkType[] = [
     {
         id: "home",
-        label: "Inicio",
-        route: { url: "/" },
+        label: t("navbar.home"),
+        route: { name: "landing" },
     },
     {
         id: "categories",
-        label: "Servicios",
-        route: { url: "/#categories" },
+        label: t("navbar.services"),
+        route: { path: "#categories" },
     },
     // {
     //     id: "events",
@@ -99,13 +105,13 @@ const navLinks: NavBarLinkType[] = [
     // },
     {
         id: "faq",
-        label: "Faq",
-        route: { url: "/#faq" },
+        label: t("navbar.faq"),
+        route: { path: "#faq" },
     },
     {
         id: "contacto",
-        label: "Contáctanos",
-        route: { url: "/#contacto" },
+        label: t("navbar.contact"),
+        route: { path: "#contacto" },
     },
     //   {
     //     id: 'blog',

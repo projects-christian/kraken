@@ -9,13 +9,10 @@
             <div class="flex flex-wrap items-center justify-between mb-10">
                 <div>
                     <h2 class="text-4xl font-medium capitalize text-white mb-2">
-                        Trabajos Realizados
+                        {{ t("homeShowcase.title") }}
                     </h2>
                     <p class="text-sm text-default-200 font-medium">
-                        Conocé algunos de nuestros trabajos realizados en
-                        escenografía, carrozas y ambientación. <br />
-                        Ideas que se hicieron realidad a través del diseño, la
-                        técnica y la pasión.
+                        {{ t("homeShowcase.description") }}
                     </p>
                 </div>
                 <!-- <a
@@ -50,6 +47,8 @@
 import { onMounted } from "vue";
 import GLightbox from "glightbox";
 import { MoveRight } from "lucide-vue-next";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 import img1 from "@/assets/images/gallery/gallery-1.jpg";
 import img2 from "@/assets/images/gallery/gallery-2.jpg";

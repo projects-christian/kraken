@@ -26,7 +26,7 @@
                                     <span
                                         class="w-2 h-2 inline-block bg-primary rounded-full"
                                     ></span>
-                                    Aquí respiras arte
+                                    {{ t("homeHero.phrase") }}
                                 </span>
                                 <h1
                                     class="font-semibold text-4xl/tight lg:text-6xl/tight capitalize text-white mb-4"
@@ -35,17 +35,13 @@
                                         class="bg-gradient-to-l from-red-600 to-primary text-transparent bg-clip-text"
                                         >Kraken Studio Art</span
                                     >
-                                    escenografia, carrozas y ambientación.
+                                    <br>
+                                    {{ t("homeHero.title") }}
                                 </h1>
                                 <p
                                     class="text-lg max-w-xl text-default-200 mb-6"
                                 >
-                                    Somos expertos para crear lo que necesites
-                                    para todo tipo de eventos: Carnavales,
-                                    Procesiones religiosas, Desfiles temáticos,
-                                    Fiestas patronales, Lanzamientos de
-                                    productos, Stands para ferias comerciales,
-                                    etc.
+                                    {{ t("homeHero.description") }}
                                 </p>
 
                                 <!-- <div>
@@ -110,6 +106,9 @@
 
 <script setup lang="ts">
 import { Badge, Triangle } from "lucide-vue-next";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+
 import nftArt5 from "@/assets/images/hero/carrosa-festival.png";
 import nftArt6 from "@/assets/images/hero/cocodrilo.png";
 import nftArt18 from "@/assets/images/hero/dinosaurio-left.png";

@@ -1,6 +1,6 @@
 <template>
     <router-link
-        :to="`/servicios/${item.slug}`"
+        :to="locale === 'en' ? `/services/${item.slug}` : `/${locale}/services/${item.slug}`"
         class="group relative overflow-hidden backdrop-blur-3xl bg-default-950/40 rounded-lg duration-500 ease-in-out"
         data-aos="zoom-in"
         data-aos-duration="800"
@@ -85,9 +85,13 @@
 
 <script setup lang="ts">
 import { Navigation } from "lucide-vue-next";
+import { useI18n } from 'vue-i18n'
+
 import { ref, onMounted } from "vue";
 import type { PropType } from "vue";
 import type { CategoryType } from "@/views/pages/index-1/components/types";
+
+const { locale } = useI18n()
 
 const props = defineProps({
     item: {
