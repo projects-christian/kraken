@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { useRoute, useRouter } from "vue-router";
-import { onMounted, computed } from "vue";
+import { onMounted, computed, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 
 import { generateCategories } from "@/data/data";
@@ -39,8 +39,12 @@ import Background2 from "@/components/Background2.vue";
 import BackToTop from "@/components/BackToTop.vue";
 
 
-const { t } = useI18n();
-const categories = generateCategories(t);
+const { t, locale } = useI18n();
+const categories = ref(generateCategories(t));
+
+watch(locale, () => {
+  categories.value = generateCategories(t);
+});
 
 // Función para convertir slug a clave válida del objeto
 // function normalizeSlug(slug) {
@@ -51,13 +55,14 @@ const route = useRoute();
 const router = useRouter();
 
 const service = computed(() =>
-    categories.find((s) => s.slug === route.params.slug),
+  categories.value.find((s) => s.slug === route.params.slug)
 );
 
 // Redirigir si no existe el servicio
 onMounted(() => {
     const slug = route.params.slug as string;
-    const metaService = categories.find((s) => s.slug === slug);
+    const metaService = categories.value.find((s) => s.slug === slug);
+
 
     if (metaService) {
         document.title = `${metaService.meta.title} | Kraken Studio Art`;

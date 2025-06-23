@@ -380,27 +380,19 @@ export function generateFooterItems(t: (key: string) => string): FooterItemType[
             links: [
                 {
                     label: t('categories.floats.name'),
-                    route: {
-                        url: "/servicios/carrozas"
-                    },
+                    route: { path: "/services/floats" },
                 },
                 {
                     label: t('categories.artisticPieces.name'),
-                    route: {
-                        url: "/servicios/piezas-artisticas"
-                    },
+                    route: { path: "/services/artistic-pieces" },
                 },
                 {
                     label: t('categories.sculpturesAndMacrosculptures.name'),
-                    route: {
-                        url: "servicios/esculturas-y-macroesculturas"
-                    },
+                    route: { path: "/services/sculptures-and-macrosculptures" },
                 },
                 {
                     label: t('categories.filmAndTvSets.name'),
-                    route: {
-                        url: "/servicios/sets-de-rodaje-para-cine-y-tv"
-                    },
+                    route: { path: "/services/film-and-tv-sets" },
                 },
             ],
         },
@@ -409,27 +401,19 @@ export function generateFooterItems(t: (key: string) => string): FooterItemType[
             links: [
                 {
                     label: t('categories.StatuettesForAwards.name'),
-                    route: {
-                        url: "/servicios/estatuillas-para-premios"
-                    },
+                    route: { path: "/services/statuettes-for-awards" },
                 },
                 {
                     label: t('categories.venueTheming.name'),
-                    route: {
-                        url: "/servicios/ambientacion-de-lugar"
-                    },
+                    route: { path: "/services/venue-theming" },
                 },
                 {
                     label: t('categories.creatingCostumes.name'),
-                    route: {
-                        url: "/servicios/creacion-de-disfraces"
-                    },
+                    route: { path: "/services/creating-costumes" },
                 },
                 {
                     label: t('categories.themeParks.name'),
-                    route: {
-                        url: "/servicios/parques-tematicos"
-                    },
+                    route: { path: "/services/theme-parks" },
                 },
             ],
         },

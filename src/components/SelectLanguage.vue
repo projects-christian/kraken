@@ -41,6 +41,7 @@
 <script setup>
 import { ref, computed } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import i18n from "@/i18n"; // 👈 asegúrate de que esta ruta es correcta
 
 const route = useRoute();
 const router = useRouter();
@@ -74,7 +75,9 @@ function switchLang(newLang) {
     }
   }
 
+  i18n.global.locale.value = newLang; // ✅ fuerza el cambio de idioma inmediatamente
   open.value = false;
   router.push(newPath);
 }
+
 </script>

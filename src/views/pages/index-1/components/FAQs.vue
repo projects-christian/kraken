@@ -58,11 +58,17 @@
 </template>
 
 <script setup lang="ts">
+import { ref, watch } from "vue";
 import { ChevronUp, HelpCircle } from "lucide-vue-next";
 import { chunkArray } from "@/helpers/array";
 import { generateFaqs } from "@/data/data";
 import { useI18n } from "vue-i18n";
 
-const { t } = useI18n();
-const faqs = generateFaqs(t);
+const { t, locale } = useI18n();
+const faqs = ref(generateFaqs(t));
+
+// Vuelve a generar cuando cambia el idioma
+watch(locale, () => {
+  faqs.value = generateFaqs(t);
+});
 </script>
