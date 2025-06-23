@@ -77,7 +77,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+const { t,  } = useI18n();
 
 const features1 = computed(() => [
     t('homeEvents.nameOne'),
@@ -88,12 +88,12 @@ const features1 = computed(() => [
     t('homeEvents.nameSix'),
     t('homeEvents.nameSeven')
 ])
-const features2: string[] = [
+const features2 = computed(() => [
     t('homeEvents.nameEight'),
     t('homeEvents.nameNine'),
     t('homeEvents.nameTen'),
     t('homeEvents.nameEleven'),
     t('homeEvents.nameTwelve'),
     t('homeEvents.nameThirteen')
-];
+]);
 </script>

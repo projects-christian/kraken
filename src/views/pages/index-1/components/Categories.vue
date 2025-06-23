@@ -30,11 +30,17 @@
 </template>
 
 <script setup lang="ts">
+import { ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { generateCategories } from "@/data/data";
 import CategoryCard from "@/views/pages/index-1/components/CategoryCard.vue";
 import { MoveRight } from "lucide-vue-next";
 
-const { t } = useI18n();
-const categories = generateCategories(t);
+const { t, locale } = useI18n();
+const categories = ref(generateCategories(t));
+
+// Vuelve a generar cuando cambia el idioma
+watch(locale, () => {
+  categories.value = generateCategories(t);
+});
 </script>
