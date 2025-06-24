@@ -3,76 +3,99 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
-    <url>
-        <loc>https://krakenstudioart.com/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl"/>
-    </url>
 
-    <url>
-        <loc>https://krakenstudioart.com/services/floats</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/floats"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/floats"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/floats"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/floats"/>
-    </url>
+  <!-- Homepage -->
+  <url>
+    <loc>https://krakenstudioart.com/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krakenstudioart.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/" />
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 
-    <url>
-        <loc>https://krakenstudioart.com/services/artistic-pieces</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/artistic-pieces"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/artistic-pieces"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/artistic-pieces"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/artistic-pieces"/>
-    </url>
+  <!-- Repite este bloque para cada servicio -->
 
-    <url>
-        <loc>https://krakenstudioart.com/services/sculptures-and-macrosculptures</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/sculptures-and-macrosculptures"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/sculptures-and-macrosculptures"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/sculptures-and-macrosculptures"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/sculptures-and-macrosculptures"/>
-    </url>
+  <url>
+    <loc>https://krakenstudioart.com/services/floats</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/floats"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/floats"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/floats"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/floats"/>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 
-    <url>
-        <loc>https://krakenstudioart.com/services/film-and-tv-sets</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/film-and-tv-sets"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/film-and-tv-sets"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/film-and-tv-sets"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/film-and-tv-sets"/>
-    </url>
+  <url>
+    <loc>https://krakenstudioart.com/services/artistic-pieces</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/artistic-pieces"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/artistic-pieces"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/artistic-pieces"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/artistic-pieces"/>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 
-    <url>
-        <loc>https://krakenstudioart.com/services/statuettes-for-awards</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/statuettes-for-awards"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/statuettes-for-awards"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/statuettes-for-awards"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/statuettes-for-awards"/>
-    </url>
+  <url>
+    <loc>https://krakenstudioart.com/services/sculptures-and-macrosculptures</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/sculptures-and-macrosculptures"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/sculptures-and-macrosculptures"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/sculptures-and-macrosculptures"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/sculptures-and-macrosculptures"/>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 
-    <url>
-        <loc>https://krakenstudioart.com/services/venue-theming</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/venue-theming"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/venue-theming"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/venue-theming"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/venue-theming"/>
-    </url>
+  <url>
+    <loc>https://krakenstudioart.com/services/film-and-tv-sets</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/film-and-tv-sets"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/film-and-tv-sets"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/film-and-tv-sets"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/film-and-tv-sets"/>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 
-    <url>
-        <loc>https://krakenstudioart.com/services/creating-costumes</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/creating-costumes"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/creating-costumes"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/creating-costumes"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/creating-costumes"/>
-    </url>
+  <url>
+    <loc>https://krakenstudioart.com/services/statuettes-for-awards</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/statuettes-for-awards"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/statuettes-for-awards"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/statuettes-for-awards"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/statuettes-for-awards"/>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 
-    <url>
-        <loc>https://krakenstudioart.com/services/theme-parks</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/theme-parks"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/theme-parks"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/theme-parks"/>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/theme-parks"/>
-    </url>
+  <url>
+    <loc>https://krakenstudioart.com/services/venue-theming</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/venue-theming"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/venue-theming"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/venue-theming"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/venue-theming"/>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://krakenstudioart.com/services/creating-costumes</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/creating-costumes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/creating-costumes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/creating-costumes"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/creating-costumes"/>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://krakenstudioart.com/services/theme-parks</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krakenstudioart.com/services/theme-parks"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://krakenstudioart.com/es/services/theme-parks"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://krakenstudioart.com/it/services/theme-parks"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://krakenstudioart.com/nl/services/theme-parks"/>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 
 </urlset>
