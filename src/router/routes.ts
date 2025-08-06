@@ -34,6 +34,11 @@ const baseRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
     },
   },
   {
+    path: "/proposal",
+    name: "proposal",
+    component: () => import("@/views/pages/proposal/index.vue"),
+  },
+  {
     path: "/pages/",
     children: [
       {
