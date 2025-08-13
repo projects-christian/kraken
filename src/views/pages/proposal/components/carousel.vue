@@ -13,7 +13,7 @@
                 ></div>
                 <div class="slide-inner--info">
                     <h1>Iconic<br />Barranquilla</h1>
-                    <a data-type="page-transition" class="ms-btn--slider">Estas listo?</a>
+                    <a data-type="page-transition" class="ms-btn--slider">¿Estás listo?</a>
                 </div>
             </div>
         </div>
@@ -26,10 +26,38 @@
                     :style="{ backgroundImage: `url(${fountain1})` }"
                 ></div>
                 <div class="slide-inner--info">
+                    <div class="collage relative">
+                      <img
+                          :src="trastevere"
+                          class="absolute w-[600px] h-auto top-[-500px] left-[550px] z-[1]"
+                          alt="Logo kraken"
+                      />
+                      <img
+                          :src="trevi"
+                          class="absolute w-[400px] h-auto top-[-630px] left-[190px] z-[2]"
+                          alt="Logo kraken"
+                      />
+                      <img
+                          :src="arc"
+                          class="absolute w-[400px] h-auto top-[-250px] right-[-250px] z-[2]"
+                          alt="Logo kraken"
+                      />
+                      <img
+                          :src="temple"
+                          class="absolute w-[400px] h-auto top-[-300px] left-[190px] z-[2]"
+                          alt="Logo kraken"
+                      />
+                      <img
+                          :src="stands"
+                          class="absolute w-[400px] h-auto top-[-630px] right-[-250px] z-[2]"
+                          alt="Logo kraken"
+                      />
+                      
+                    </div>
                     <h2>Hacer nuevos lugares<br />inspirados  en el primer mundo</h2>
                     <ul>
                         <li>Impulsar el turismo y lugares emblemáticos en la ciudad</li>
-                        <li>Sitios pintorescos que sean turísticamente atractivos</li>
+                        <li>Sitios pintoréscos que sean turísticamente atractivos</li>
                     </ul>
                     <a data-type="page-transition" class="ms-btn--slider">Con nuestro sello que es el arte</a>
                 </div>
@@ -40,16 +68,16 @@
                 <div class="overlay"></div>
                 <div
                     class="slide-inner--image"
-                    :style="{ backgroundImage: `url(${img1})` }"
+                    :style="{ backgroundImage: `url(${barranquillaTwo})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h2>¿Qué hace falta para convertir<br />Barranquilla en una ciudad del primer mundo?</h2>
+                    <h2>¿Qué hace falta para convertir a<br />Barranquilla en una ciudad del primer mundo?</h2>
                     <ul>
-                        <li>Infraestructura civil</li>
-                        <li>Infraestructura Artística</li>
-                        <li>Cultura comunitaria</li>
-                        <li>Activación Creativa</li>
+                        <li>Atractivos turísticos</li>
+                        <li>Infraestructura adecuada</li>
+                        <li>Marketing y promoción</li>
                         <li>Desarrollo mixto</li>
+                        <li>Comunidad receptiva</li>
                     </ul>
                     <a data-type="page-transition" class="ms-btn--slider">take a look</a>
                 </div>
@@ -63,10 +91,8 @@
                     :style="{ backgroundImage: `url(${piazzaDelNettuno})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h2>Kraken Studio ofrece<br />propuesta para la <br />creación de</h2>
-                    <ul>
-                        <li>Plazas comerciales</li>
-                    </ul>
+                    <h2>Kraken Studio ofrece<br /></h2>
+                    <p>Un plan de intervención urbana para revitalizar zonas estratégicas con espacios que generen cultura, turismo y economía local.</p>
                     <a data-type="page-transition" class="ms-btn--slider">take a look</a>
                 </div>
             </div>
@@ -76,12 +102,19 @@
                 <div class="overlay"></div>
                 <div
                     class="slide-inner--image"
-                    :style="{ backgroundImage: `url(${northMacedonia})` }"
+                    :style="{ backgroundImage: `url(${candyland})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h1>Fuentes</h1>
-                    <p></p>
-                    <a data-type="page-transition" class="ms-btn--slider">take a look</a>
+                    <h1>Candyland</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Lugar turístico de alto impacto inspirado en la innovación y estándares nunca antes vistos en Barranquilla</span></p>
+                        <p class="mb-[10px]"><b>¿Por qué atrae el turismo?</b> 
+                            <br/><span class="list-benefits">Es un lugar que impacta visualmente por sus colores y obras de arte en el exterior e interior del lugar</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Lugar emblemático, innovación, activación del turismo</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
                 </div>
             </div>
         </div>
@@ -90,12 +123,19 @@
                 <div class="overlay"></div>
                 <div
                     class="slide-inner--image"
-                    :style="{ backgroundImage: `url(${christmasCity})` }"
+                    :style="{ backgroundImage: `url(${goldenGate})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h1>Macroesculturas en la ciudad</h1>
-                    <p></p>
-                    <a data-type="page-transition" class="ms-btn--slider">take a look</a>
+                    <h1>Puerta de oro</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Una gigantesca puerta de color oro que haga referencia al nombre emblemático de Barranquilla, Puerta de Oro</span></p>
+                        <p class="mb-[10px]"><b>¿Por qué atrae el turismo?</b> 
+                            <br/><span class="list-benefits">Destaca por su gran tamaño y acabados artísticos con referencia a la ciudad más bella de Colombia</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Activación del turismo e identidad cultural de la ciudad</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
                 </div>
             </div>
         </div>
@@ -104,12 +144,103 @@
                 <div class="overlay"></div>
                 <div
                     class="slide-inner--image"
-                    :style="{ backgroundImage: `url(${christmasCity})` }"
+                    :style="{ backgroundImage: `url(${chineseTemple})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h1>Espacios icónicos</h1>
-                    <p></p>
-                    <a data-type="page-transition" class="ms-btn--slider">take a look</a>
+                    <h1>Templo icónico<br/> en Puerto Mocho</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Impulso artístico en Puerto Mocho para atraer turismo a este lugar</span></p>
+                        <p class="mb-[10px]"><b>¿Por qué atrae el turismo?</b> 
+                            <br/><span class="list-benefits">El templo brinda innovación e incentiva más al turista a ir a Puerto Mocho y ayudar a activar la economía de ese sector</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Activación del comercio e impulso para Puerto Mocho</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                    class="slide-inner--image"
+                    :style="{ backgroundImage: `url(${stadiumStatues})` }"
+                ></div>
+                <div class="slide-inner--info">
+                    <h1>Estatuas en el<br/> Estadio Metropolitano Roberto Melendez</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Homenaje a las leyendas que se han esforzados durante estos 101 años de la institución y logrado las mejores asañas </span></p>
+                        <p class="mb-[10px]"><b>¿Por qué atrae el turismo?</b> 
+                            <br/><span class="list-benefits">Las estatuas  brindarían un impacto más visual al estadio provocando que turistas quieran tomarse fotos e incluso motivación para los mismos jugadores de algún día ver su propia estatua ahí</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Activación del estadio para atraer más gente y reforzar de mejor manera la renovación del estadio</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                    class="slide-inner--image"
+                    :style="{ backgroundImage: `url(${carnival})` }"
+                ></div>
+                <div class="slide-inner--info">
+                    <h1>Sector/pasillo<br/>del carnaval</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Pasillo en el Gran Malecón de 20 metros de largo lleno de estatuas, figuras y referencias de lo que es el carnaval.</span></p>
+                        <p class="mb-[10px]"><b>¿Por qué atrae el turismo?</b> 
+                            <br/><span class="list-benefits">Sería un impulso visual al Gran Malecón y aportaría más a lo que es la cultura de Barranquilla y el carnaval.</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Identidad cultural de la ciudad y explicación de lo que es el carnaval para los turistas que aún no lo conocen</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                    class="slide-inner--image"
+                    :style="{ backgroundImage: `url(${foodCourt})` }"
+                ></div>
+                <div class="slide-inner--info">
+                    <h1>Plaza comercial<br/>de stand</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Una nueva oportunidad para atraer el comercio a las calles implementando stands artísticos de comida.</span></p>
+                        <p class="mb-[10px]"><b>¿Por qué atrae el turismo?</b> 
+                            <br/><span class="list-benefits">Este espacio brinda una experiencia de primer mundo al aire libre que podría ser utilizado para eventos sociales y concursos.</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Nuevos escenarios para eventos y oportunidad para el comercio.</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                    class="slide-inner--image"
+                    :style="{ backgroundImage: `url(${piazzaDelNettuno})` }"
+                ></div>
+                <div class="slide-inner--info">
+                    <h1>Plaza comercial<br/>con fuente</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Un espacio en el cual se busca el impacto visual de los residentes y turistas añadiendo este nuevo lugar emblemático de la ciudad.</span></p>
+                        <p class="mb-[10px]"><b>¿Por que atrae el turismo?</b> 
+                            <br/><span class="list-benefits">Sus acabados inspirados en Europa, las estatuas basadas en la cultura de barranquilla y su gran espacio para promover el comercio haría de este lugar un referente en la ciudad.</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Un nuevo lugar emblemático y escenario para nuevos eventos en la ciudad.</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
                 </div>
             </div>
         </div>
@@ -121,9 +252,16 @@
                     :style="{ backgroundImage: `url(${garden1})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h1>Jardines inspirados en la cultura oriental</h1>
-                    <p></p>
-                    <a data-type="page-transition" class="ms-btn--slider">take a look</a>
+                    <h1>Jardín oriental</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Un jardín basado en la cultura oriental con espacios verdes increibles y lagos artificiales llenos de paz y un aire fresco para la ciudad.</span></p>
+                        <p class="mb-[10px]"><b>¿Por qué atrae el turismo?</b> 
+                            <br/><span class="list-benefits">Colombia cuenta con muy pocos jardines orientales y Barranquilla sería una de pocas ciudades que implementaría este tipo de jardines de gran impacto ecológico.</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Nuevas zonas verdes y una Barranquilla más ecológica y ambiental.</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
                 </div>
             </div>
         </div>
@@ -132,12 +270,19 @@
                 <div class="overlay"></div>
                 <div
                     class="slide-inner--image"
-                    :style="{ backgroundImage: `url(${carnival1})` }"
+                    :style="{ backgroundImage: `url(${restShip})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h1>La creación de un pasillo estilo museo en el malecón</h1>
-                    <p></p>
-                    <a data-type="page-transition" class="ms-btn--slider">take a look</a>
+                    <h1>Barcos restaurantes<br /> en el rio</h1>
+                    <div class="mb-[25px]">
+                        <p class="mb-[10px]"><b>¿Qué es?</b> 
+                            <br/><span class="list-benefits">Una nueva idea de comercio inspirada en el Río Sena, que se puede replicar para utilizar más activamente el Río Magdalena mediante barcos que ofrecan un tour por el río mientras se ofrece una cena o comida de dos horas.</span></p>
+                        <p class="mb-[10px]"><b>¿Por que atrae el turismo?</b> 
+                            <br/><span class="list-benefits">Esta nueva experiencia permite que todo tipo de persona que esté en la ciudad quiera conocer un poco más del río mientras disfruta de una deliciosa comida.</span></p>                                                                                           
+                        <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
+                            <br/><span class="list-benefits">Nuevas ideas de comercio e impulsar los recursos naturales de la ciudad como el Río Magdalena.</span></p>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
                 </div>
             </div>
         </div>
@@ -175,9 +320,26 @@
 <script setup lang="ts">
 import img1 from '@/assets/images/proposal/img-1.jpg'
 import barranquillaOne from '@/assets/images/proposal/barranquilla-one.jpg'
-import singapore1 from '@/assets/images/proposal/singapore-1.jpg'
+
+import trevi from '@/assets/images/proposal/collage/fontana-di-trevi.jpg'
+import trastevere from '@/assets/images/proposal/collage/trastevere.webp'
+import arc from '@/assets/images/proposal/collage/arc-de-triomphe.jpg'
+import temple from '@/assets/images/proposal/collage/temple.jpg'
+import stands from '@/assets/images/proposal/collage/stands.jpg'
+
+
+import barranquillaTwo from '@/assets/images/proposal/barranquilla-2.jpg'
+import candyland from '@/assets/images/proposal/candyland-3.jpg'
+import goldenGate from '@/assets/images/proposal/golden-gate.jpg'
+import chineseTemple from '@/assets/images/proposal/chinese-temple.jpg'
+import stadiumStatues from '@/assets/images/proposal/stadium-statues-1.jpg'
+import carnival from '@/assets/images/proposal/carnival.jpg'
+import foodCourt from '@/assets/images/proposal/food-court.png'
+import restShip from '@/assets/images/proposal/rest-ship.jpg'
+
+
 import fountain1 from '@/assets/images/proposal/fountain-of-newts.jpg'
-import piazzaDelNettuno from '@/assets/images/proposal/piazza-del-nettuno-square-in-bologna.jpg'
+import piazzaDelNettuno from '@/assets/images/proposal/piazza-del-nettuno-square-in-bologna-2.jpg'
 import northMacedonia from '@/assets/images/proposal/north-macedonia.jpg'
 import christmasCity from '@/assets/images/proposal/christmas-city.jpg'
 import garden1 from '@/assets/images/proposal/wangjianglou-park.jpg'

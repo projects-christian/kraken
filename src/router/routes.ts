@@ -1,6 +1,8 @@
 // src/router/routes.ts
 import type { RouteRecordRaw } from "vue-router"
 import { SUPPORT_LOCALES } from "@/i18n" // ['en', 'es', 'it', etc.]
+const proposal = import.meta.env.VITE_PROPOSAL_ENTRY;
+
 
 interface RouteMetaType {
   title?: string
@@ -37,6 +39,15 @@ const baseRoutes: Array<RouteRecordRaw & { meta?: RouteMetaType }> = [
     path: "/proposal",
     name: "proposal",
     component: () => import("@/views/pages/proposal/index.vue"),
+    beforeEnter: (to, from, next) => {
+      const password = prompt("Ingresa la clave para acceder:");
+      if (password === proposal) {
+        next();
+      } else {
+        alert("Clave incorrecta");
+        next(false);
+      }
+    },
   },
   {
     path: "/pages/",

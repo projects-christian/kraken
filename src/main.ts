@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.min.css";
 import "@/assets/css/icons.css";
 import "@/assets/css/style.css";
-import "@/assets/css/proposal.css";
 
 import AOS from "aos";
 
