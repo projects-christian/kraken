@@ -112,7 +112,7 @@
                         <p class="mb-[10px]"><b>¿Por qué atrae el turismo?</b> 
                             <br/><span class="list-benefits">Es un lugar que impacta visualmente por sus colores y obras de arte en el exterior e interior del lugar</span></p>                                                                                           
                         <p class="mb-[10px]"><b>Beneficios para la ciudad:</b> 
-                            <br/><span class="list-benefits">Lugar emblemático, innovación, activación del turismo</span></p>
+                            <br/><span class="list-benefits">Lugar emblemático, innovación, activación del turismo </span></p>
                     </div>
                     <a data-type="page-transition" class="ms-btn--slider">Lugar icónico</a>
                 </div>
