@@ -220,6 +220,7 @@ import Footer from "@/views/pages/index-1/components/Footer.vue";
 import Background2 from "@/components/Background2.vue";
 import BackToTop from "@/components/BackToTop.vue";
 
+
 import { Diamond, Wallet, Shapes, MoveRight } from "lucide-vue-next";
 import { ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
