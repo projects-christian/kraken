@@ -79,7 +79,7 @@
                         <li>Desarrollo mixto</li>
                         <li>Comunidad receptiva</li>
                     </ul>
-                    <a data-type="page-transition" class="ms-btn--slider">take a look</a>
+                    <a data-type="page-transition" class="ms-btn--slider">Kraken Studio</a>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                 <div class="slide-inner--info">
                     <h2>Kraken Studio ofrece<br /></h2>
                     <p>Un plan de intervención urbana para revitalizar zonas estratégicas con espacios que generen cultura, turismo y economía local.</p>
-                    <a data-type="page-transition" class="ms-btn--slider">take a look</a>
+                    <a data-type="page-transition" class="ms-btn--slider">Kraken Studio</a>
                 </div>
             </div>
         </div>
@@ -168,7 +168,7 @@
                     :style="{ backgroundImage: `url(${stadiumStatues})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h1>Estatuas en el<br/> Estadio Metropolitano Roberto Melendez</h1>
+                    <h1>Estatuas en el<br/> Metro</h1>
                     <div class="mb-[25px]">
                         <p class="mb-[10px]"><b>¿Qué es?</b> 
                             <br/><span class="list-benefits">Homenaje a las leyendas que se han esforzados durante estos 101 años de la institución y logrado las mejores asañas </span></p>
@@ -189,7 +189,7 @@
                     :style="{ backgroundImage: `url(${carnival})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h1>Sector/pasillo<br/>del carnaval</h1>
+                    <h1>Pasillo<br/>del carnaval</h1>
                     <div class="mb-[25px]">
                         <p class="mb-[10px]"><b>¿Qué es?</b> 
                             <br/><span class="list-benefits">Pasillo en el Gran Malecón de 20 metros de largo lleno de estatuas, figuras y referencias de lo que es el carnaval.</span></p>
@@ -231,7 +231,7 @@
                     :style="{ backgroundImage: `url(${piazzaDelNettuno})` }"
                 ></div>
                 <div class="slide-inner--info">
-                    <h1>Plaza comercial<br/>con fuente</h1>
+                    <h1>Plaza fontanova<br/></h1>
                     <div class="mb-[25px]">
                         <p class="mb-[10px]"><b>¿Qué es?</b> 
                             <br/><span class="list-benefits">Un espacio en el cual se busca el impacto visual de los residentes y turistas añadiendo este nuevo lugar emblemático de la ciudad.</span></p>
@@ -286,6 +286,35 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-slide">
+            <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                    class="slide-inner--image"
+                    :style="{ backgroundImage: `url(${guitarra})` }"
+                ></div>
+                <div class="slide-inner--info" style="margin-left: 250px;">
+                    <h1>Eventos<br /> en la ciudad</h1>
+                    <div class="mb-[25px]">
+                        <p style="font-size: 30px; margin-bottom: 0;">Ofrecemos un plan de actividades para impulsar el turismo</p>
+                        <p style="font-size: 30px;">con la intención de traer más gente a barranquilla del interior y exterior del país:</p>
+                        <ul style="font-size: 20px;">
+                            <li>Competiciones de DJs</li> 
+                            <li>Eventos de música sin cobro para los artistas que desean darse a conocer y no cuentan con patrocinio </li>
+                            <li>Competencias de bartender</li>
+                            <li>Batallas de baile</li>
+                            <li>Obras de teatro para los artistas que deseen darse a conocer a la ciudad</li>
+                            <li>Desfiles de moda para las marcas de ropa y emprendedores que quieran impulsar su marca</li>
+                            <li>Competencias de artes marciales para niños</li>
+                            <li>Batallas de coros para impulsar la música</li>
+                            <li>Esculturas efímeras en la ciudad</li>
+                            <li>Ambientaciones artísticas en la vía pública, combinando creatividad y promoción para impulsar el turismo y generar visibilidad.</li>
+                        </ul>
+                    </div>
+                    <a data-type="page-transition" class="ms-btn--slider">Eventos icónicos</a>
+                </div>
+            </div>
+        </div>
       </div>
 
       <!-- Botones -->
@@ -336,6 +365,9 @@ import stadiumStatues from '@/assets/images/proposal/stadium-statues-1.jpg'
 import carnival from '@/assets/images/proposal/carnival.jpg'
 import foodCourt from '@/assets/images/proposal/food-court.png'
 import restShip from '@/assets/images/proposal/rest-ship.jpg'
+
+
+import guitarra from '@/assets/images/proposal/mujer-tocando-la-guitarra.jpg'
 
 
 import fountain1 from '@/assets/images/proposal/fountain-of-newts.jpg'
